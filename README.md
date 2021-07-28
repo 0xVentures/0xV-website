@@ -9,8 +9,8 @@ Ideally, this repository will serve as a purpose for all Contributors/Developers
 This will be a brief summary of intended features for both the Web Application and Mobile Application.
 
 ### Web Application:
-* User Account Creation
-* User Login 
+* Admins should witelist user crypto addresses
+* User Login via crypto address (proving you own the address, similar to snapshot.org etc
 * A directory of our members
 * Investments
 * Application for group inclusion?
