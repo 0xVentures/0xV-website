@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# 0xVentures
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the main project repository for 0xVentures - 0xVentures.xyz is the frontend for all web related projects born out of the greatest minds of LP University to be built with [React]( https://reactjs.org/), paired with a Mobile Application.
 
-## Available Scripts
+### Notes
+Ideally, this repository will serve as a purpose for all Contributors/Developers to make adjustments along the way and to update this as we progress.
 
-In the project directory, you can run:
+## Requirements overview
+This will be a brief summary of intended features for both the Web Application and Mobile Application.
 
-### `npm start`
+### Web Application:
+* Admins should witelist user crypto addresses
+* User Login via crypto address (proving you own the address, similar to snapshot.org etc
+* A directory of our members
+* Investments
+* Application for group inclusion?
+* Contact form(s)/link(s)
+* Treasury Wallet
+* A landing page that shows our roadmap
+* Projects
+* Project status (Open, Closed, Ready for Funds, etc)
+* Pitch deck links, Twitter/Discord links, etc. Basically a repository of data for that project (https://drive.google.com/drive/folders/1j5wjkgyeAMHueir17vfAKIBZED4nDUVS?usp=sharing)
+* Form for filling out participating in projects, although tbh it’s probably still easier to do via Google Forms for the time being
+* Proposals
+* Create/edit a proposal
+* Comments
+* Voting (can be implemented as anon voting)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### Mobile Application:
+* User Account Creation
+* User login
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Roadmap
+* Smart contracts for DAO handling
+* Arb bots
+* 0xResearch
+  - Could be hosted on our website, but deeper research articles on new projects, existing projects, articles on valuation or simply things like which projects are most out-of-alignment in valuation/market cap with other similar projects
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Security Audits 
+  - One thing that’s hot as a pancake griddle right now is smart contract security auditing. Wouldn’t hurt to perhaps sponsor a dev to learn the ins-and-outs of     that as a revenue generation tool. Could contract with projects to offer security audits for a percentage of tokens or cash.
+  - Website
+   
+* Our Vision as a DAO
+  - We add value to every project we touch.  We believe in a decentralized world that offers equal opportunity for all.  We are more than just capital           investment, we are an organization full of life, eager to innovate, inspire, & contribute to every project we engage with.
+  - The way we add value is to first understand the needs of a project & then contribute via:
+  - Capital
+  - Relationships
+  - Advisement
+  - Tool Building
 
-### `npm run eject`
+### Dev-updates
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Hosting details
