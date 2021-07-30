@@ -4,7 +4,6 @@ import ParticleImage, {
   ParticleOptions,
   Vector,
   forces,
-  ParticleForce,
 } from 'react-particle-image'
 
 const particleOptions: ParticleOptions = {
