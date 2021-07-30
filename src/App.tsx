@@ -31,7 +31,7 @@ function App() {
 
   return (
     <ParticleImage
-      src={'/0xv002-comingsoon.png'}
+      src={process.env.PUBLIC_URL + '/img/0xv002-comingsoon.png'}
       width={Number(innerWidth)}
       height={Number(innerHeight)}
       scale={0.75}
