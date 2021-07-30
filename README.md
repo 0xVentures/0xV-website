@@ -6,7 +6,7 @@ This is the main project repository for 0xVentures - 0xVentures.xyz is the front
 Ideally, this repository will serve as a purpose for all Contributors/Developers to make adjustments along the way and to update this as we progress.
 
 ## Requirements overview
-This will be a brief summary of intended features for both the Web Application and Mobile Application.
+This will be a brief summary of intended features for both the Web Application and Mobile Web Application.
 
 ### Web Application:
 * Admins should witelist user crypto addresses
@@ -28,7 +28,7 @@ This will be a brief summary of intended features for both the Web Application a
 
 
 
-### Mobile Application:
+### Mobile Web Application:
 * User Account Creation
 * User login
 
