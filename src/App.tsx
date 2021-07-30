@@ -41,6 +41,7 @@ function App() {
       mouseMoveForce={motionForce}
       touchMoveForce={motionForce}
       backgroundColor="#191D1F"
+      style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}
     />
   )
 }
