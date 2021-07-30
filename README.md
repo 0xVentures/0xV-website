@@ -52,8 +52,3 @@ This will be a brief summary of intended features for both the Web Application a
   - Relationships
   - Advisement
   - Tool Building
-
-### Dev-updates
-
-
-### Hosting details
