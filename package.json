@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://0xVentures.github.io/website",
+  "homepage": "https://0xventures.org/website",
   "dependencies": {
     "@rooks/use-window-size": "^4.11.2",
     "@testing-library/jest-dom": "^5.14.1",
