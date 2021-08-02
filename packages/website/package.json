@@ -1,7 +1,6 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://0xventures.org",
   "dependencies": {
     "@rooks/use-window-size": "^4.11.2",
