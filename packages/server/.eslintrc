@@ -1,0 +1,6 @@
+{
+  "extends": ["node", "prettier"],
+  "rules": {
+    "import/no-commonjs": 0
+  }
+}
