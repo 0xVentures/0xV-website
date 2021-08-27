@@ -1,210 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>0xVentures</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://api.twitter.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300&display=swap"
-      rel="stylesheet"
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="0xVentures - Wen Moon?"
     />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>0xVentures - Wen? Soon!</title>
   </head>
   <body>
-    <video
-      playsinline
-      autoplay
-      muted
-      loop
-      poster="assets/img/04_copy.jpg"
-      class="back-video"
-    >
-      <source
-        src="/assets/img/test_animation.mp4"
-        type="video/mp4"
-      />
-      <!-- <source src="polina.webm" type="video/webm"> -->
-      <!-- <source src="polina.mp4" type="video/mp4"> -->
-    </video>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-    <div class="loading-screen">
-      <img class='loading-screen__logo' src="/assets/img/0xventures_logo_on_dark.png" />
-    </div>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-    <div class="top-nav">
-      <nav class="nav-content">
-        <a href="#menu" class="nav-btn nav-btn--menu">Menu</a>
-        <img class="nav-logo" src="/assets/img/0xventures_logo_on_dark.png" />
-        <a
-          href="https://app.0xventures.org/"
-          class="nav-btn nav-btn--login alignright"
-          >Login</a
-        >
-      </nav>
-    </div>
-
-    <div class="side-nav-wrapper">
-      <nav class="side-nav">
-        <a href="#ventures" class="side-nav__btn js-nav-btn">
-          <h1 class="logo-wrapper">
-            <img class="logo" src="/assets/img/0xventures_logo_on_dark.png" />
-            <img class="wordmark" src="/assets/img/ventures_wordmark.png" />
-          </h1>
-        </a>
-        <a href="#thinking" class="side-nav__btn js-nav-btn">Our thinking</a>
-        <a href="#mission" class="side-nav__btn js-nav-btn">Our mission</a>
-        <a href="#value" class="side-nav__btn js-nav-btn">Our value</a>
-        <a href="#dao" class="side-nav__btn js-nav-btn">Our value</a>
-        <a href="#members" class="side-nav__btn js-nav-btn">Why DAO?</a>
-        <a href="#contact" class="side-nav__btn js-nav-btn">Contact us</a>
-      </nav>
-    </div>
-
-    <section id="ventures" class="section js-section" >
-      <div class="content content--centered">
-        <div class="main-column">
-          <h2 class="slogan">Your vision, our mission</h2>
-          <p>
-            Not your regular VCs, we are a community of blockchain users who
-            have deep experience in blockchain and crypto communities.
-          </p>
-          <p>
-            0xVentures' skilled team actively participates with projects we are
-            invested in. Our partner investments are chosen not just by consumer
-            use case, but also a deeply personal view. Our first principle of
-            working with communities brings value through understanding of users
-            and broad network information sharing, which leads to organic
-            project expansion.
-          </p>
-          <p>
-            0xVentures' skilled team actively participates with projects we are
-            invested in. Our partner investments are chosen not just by consumer
-            use case, but also a deeply personal view. Our first principle of
-            working with communities brings value through understanding of users
-            and broad network information sharing, which leads to organic
-            project expansion.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section js-section">
-      <div class="content content--centered">
-        <div class="main-column">
-          <h2>Our thinking</h2>
-
-          <p>
-            0xVentures' skilled team actively participates with projects we are
-            invested in. Our partner investments are chosen not just by consumer
-            use case, but also a deeply personal view. Our first principle of
-            working with communities brings value through understanding of users
-            and broad network information sharing, which leads to organic
-            project expansion.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section js-section">
-      <div class="content content--centered">
-        <div class="main-column">
-          <h2>Our mission</h2>
-
-          <p>
-            0xVentures is a decentralized autonomous organization (DAO) that
-            functions as a treasury with the sole purpose of investing in
-            sector-disrupting projects. These projects are researched in both an
-            external macro setting and micro discourse with the teams. Our
-            recognition both as a brand and individuals, provides us a unique
-            opportunity to drive engagement across many blockchain communities.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section js-section">
-      <div class="content content--centered">
-        <div class="main-column">
-          <h2>Our value</h2>
-
-          <p>
-            We pride ourselves in being value-add investors. With diverse
-            backgrounds and expertise, we provide a unique perspective to the
-            projects in terms of marketing, UI/UX design, financing and
-            programming. This also opens up our investment strategy to multiple
-            sectors, including blockchain specific protocols, gaming, NFTs,
-            decentralised exchanges and many more.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section js-section">
-      <div class="content content--centered">
-        <div class="main-column">
-          <h2>Why DAO?</h2>
-
-          <p>
-            We are an internet-native organisation which is collectively owned
-            and managed by our members. We have no central leadership, anyone
-            can introduce a change or proposal, it is then discussed and voted
-            on as a community. 0xVentures believes that the DAO format is the
-            ideal organizational path to foster community, creativity and more
-            informed decision making.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section js-section">
-      <div class="content content--centered">
-        <div class="main-column">
-          <h2>Our members</h2>
-
-          <p>
-            Each member is critically chosen. This is done to foster an
-            environment where we work together as one unit that shares, evolves
-            and brings ideas into fruition.
-          </p>
-
-          <div class="members-wrapper js-members"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section js-section">
-      <div class="content content--centered">
-        <div class="main-column">
-          <h2>See the light</h2>
-
-          <p>
-            We are as strong as our combined forces. Our activity is written
-            into blockchain, but you’ll never find us. The future may be
-            unknown, but the opportunities for both us and our partners are
-            limitless. Speak to us today about working together.
-          </p>
-
-          <p>
-            Interested? Please fill out the form and we will get back to you
-            shortly. Every application is reviewed thoroughly. Thank you.
-          </p>
-
-          <form action="">
-            Project Name Name (Personal) Preferred form of Contact i.e Twitter,
-            email, Telegram, Discord Telegram ID Discord ID Email Address
-            Twitter Handle A short description of your project I.e goals of
-            project short/long term, onboarding companies, team behind the
-            project, vision of project etc. Anything can be accounted for in
-            relation to the project
-          </form>
-        </div>
-      </div>
-    </section>
-    <script src="/assets/js/main.js"></script>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>
