@@ -39,35 +39,35 @@
       class="back-video"
       onloadeddata="console.log('Playing file ' + this.currentSrc);"
     >
-      <source
-        src="https://link.eu1.storjshare.io/raw/jwcbuuniio4jgdzxzptcun65sufa/ventures%2Fmoon_wide_1080.mp4"
-        type="video/mp4"
-        media="screen and (max-width: 1920px) and (orientation: landscape)"
-      />
-
-      <source
-        src="https://link.eu1.storjshare.io/raw/jwyohjmzgn5otxznv7qa4odkzsgq/ventures%2Fmoon_wide_720.mp4"
-        type="video/mp4"
-        media="screen and (max-width: 1280px) and (orientation: landscape)"
-      />
-
-
-      <source
-        src="https://link.eu1.storjshare.io/raw/jvchdn25bj2i5v3yjvyxdsxvxrxa/ventures%2Fmoon_tall_1080.mp4"
-        type="video/mp4"
-        media="screen and (max-width: 1080px) and (orientation: portrait)"
-      />
-
-      <source
-        src="https://link.eu1.storjshare.io/raw/jvh4oaohu6bpnju25cjtslrjnmtq/ventures%2Fmoon_tall_720.mp4"
-        type="video/mp4"
-        media="screen and (max-width: 720px) and (orientation: portrait)"
-      />
-
-
 
       <!-- <source src="webm" type="video/webm"> -->
     </video>
+    <script>
+      var injectVideo = (function name(params) {
+        const videoEl = document.querySelector('.back-video');
+        const isWide = window.innerWidth >= window.innerHeight;
+        const isSmallWide = window.innerWidth <= 1280;
+        const isSmallTall = window.innerHeight<= 1000;
+        var source = document.createElement('source');
+        source.type = "video/mp4";
+
+        if (!isWide && isSmallTall) {
+          source.src = "https://link.eu1.storjshare.io/raw/jvh4oaohu6bpnju25cjtslrjnmtq/ventures%2Fmoon_tall_720.mp4";
+        }
+        else if (!isWide && !isSmallTall) {
+          source.src = "https://link.eu1.storjshare.io/raw/jvchdn25bj2i5v3yjvyxdsxvxrxa/ventures%2Fmoon_tall_1080.mp4";
+        }
+        else if (isWide && isSmallWide) {
+          source.src = "https://link.eu1.storjshare.io/raw/jwyohjmzgn5otxznv7qa4odkzsgq/ventures%2Fmoon_wide_720.mp4";
+        }
+        else {
+          source.src = "https://link.eu1.storjshare.io/raw/jwcbuuniio4jgdzxzptcun65sufa/ventures%2Fmoon_wide_1080.mp4";
+        }
+
+        videoEl.appendChild(source);
+
+      })();
+    </script>
 
     <div class="side-nav-gradient js-side-nav-gradient"></div>
     <div class="content-gradient js-content-gradient"></div>
