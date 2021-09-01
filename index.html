@@ -35,7 +35,7 @@
       autoplay
       muted
       loop
-      poster="assets/img/first_frame_3.1.1.jpg"
+      poster="assets/img/first_frame_3.1.1_wide.jpg"
       class="back-video"
       onloadeddata="console.log('Playing file ' + this.currentSrc);"
     >
@@ -50,6 +50,10 @@
         const isSmallTall = window.innerHeight<= 1000;
         var source = document.createElement('source');
         source.type = "video/mp4";
+
+        if (!isWide) {
+          videoEl.poster = "assets/img/first_frame_3.1.1_tall.jpg";
+        }
 
         if (!isWide && isSmallTall) {
           source.src = "https://link.eu1.storjshare.io/raw/jvh4oaohu6bpnju25cjtslrjnmtq/ventures%2Fmoon_tall_720.mp4";
