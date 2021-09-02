@@ -1,43 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="0xVentures - Wen Moon?"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>0xVentures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>0xVentures - Wen? Soon!</title>
+    <link href="https://0xventures.org/" rel="canonical">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@0x_Ventures" />
+    <meta name="twitter:title" content="0xVentures DAO" />
+    <meta
+      name="twitter:description"
+      content="0xVentures are not your regular VCs. We are users and creators who deeply care about integrating
+          with blockchains and their communities."
+    />
+    <meta
+      name="twitter:image"
+      content="//assets/img/twitter_card.png"
+    />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <video
+      playsinline
+      autoplay
+      muted
+      loop
+      poster="assets/img/first_frame_3.1.1_wide.jpg"
+      class="back-video"
+      onloadeddata="console.log('Playing file ' + this.currentSrc);"
+    >
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <!-- <source src="webm" type="video/webm"> -->
+    </video>
+    <script>
+      var injectVideo = (function name(params) {
+        const videoEl = document.querySelector('.back-video');
+        const isWide = window.innerWidth >= window.innerHeight;
+        const isSmallWide = window.innerWidth <= 1280;
+        const isSmallTall = window.innerHeight<= 1000;
+        var source = document.createElement('source');
+        source.type = "video/mp4";
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        if (!isWide) {
+          videoEl.poster = "assets/img/first_frame_3.1.1_tall.jpg";
+        }
+
+        if (!isWide && isSmallTall) {
+          source.src = "https://link.eu1.storjshare.io/raw/jvh4oaohu6bpnju25cjtslrjnmtq/ventures%2Fmoon_tall_720.mp4";
+        }
+        else if (!isWide && !isSmallTall) {
+          source.src = "https://link.eu1.storjshare.io/raw/jvchdn25bj2i5v3yjvyxdsxvxrxa/ventures%2Fmoon_tall_1080.mp4";
+        }
+        else if (isWide && isSmallWide) {
+          source.src = "https://link.eu1.storjshare.io/raw/jwyohjmzgn5otxznv7qa4odkzsgq/ventures%2Fmoon_wide_720.mp4";
+        }
+        else {
+          source.src = "https://link.eu1.storjshare.io/raw/jwcbuuniio4jgdzxzptcun65sufa/ventures%2Fmoon_wide_1080.mp4";
+        }
+
+        videoEl.appendChild(source);
+
+      })();
+    </script>
+
+    <div class="side-nav-gradient js-side-nav-gradient"></div>
+    <div class="content-gradient js-content-gradient"></div>
+
+    <div class="loading-screen">
+      <img
+        class="loading-screen__logo"
+        src="assets/img/0xventures_logo_on_dark_website.png"
+      />
+    </div>
+
+    <div class="top-nav js-top-nav">
+      <nav class="nav-content">
+        <a href="/" class="nav-btn"
+          ><img
+            class="nav-logo"
+            src="assets/img/0xventures_logo_on_dark_website.png"
+        /></a>
+        <a href="#menu" class="nav-btn nav-btn--menu alignright">Menu</a>
+      </nav>
+    </div>
+
+    <div class="side-nav-wrapper js-side-nav-wrapper">
+      <nav class="side-nav">
+        <a href="#ventures" class="side-nav__btn js-nav-btn">
+          <h1 class="logo-wrapper space-1">
+            <img class="logo" src="assets/img/0xventures_logo_on_dark.png" />
+            <img class="wordmark" src="assets/img/ventures_wordmark.png" />
+          </h1>
+        </a>
+        <a href="#value" class="side-nav__btn js-nav-btn">Value</a>
+        <a href="#dao" class="side-nav__btn js-nav-btn">DAO</a>
+        <a href="#partners" class="side-nav__btn js-nav-btn">Partners</a>
+        <a href="#members" class="side-nav__btn js-nav-btn">Members</a>
+        <a href="#contact" class="side-nav__btn js-nav-btn">Contact us</a>
+      </nav>
+
+      <div class="social-icons">
+        <a href="https://twitter.com/0x_Ventures" target="_blank"
+          ><img
+            class="social-icon"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/twitter.svg"
+        /></a>
+        <a href="https://t.me/joinchat/MUC3UHAsjrcyY2Y0" target="_blank"
+          ><img
+            class="social-icon"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/telegram.svg"
+        /></a>
+        <a href="https://discord.gg/pkKXCcSHyB" target="_blank"
+          ><img
+            class="social-icon"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/discord.svg"
+        /></a>
+        <a href="https://medium.com/@0xventures" target="_blank"
+          ><img
+            class="social-icon"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/medium.svg"
+        /></a>
+      </div>
+      <a
+        href="https://app.0xventures.org/"
+        class="side-nav__btn side-nav__btn--members js-nav-btn"
+        >Members area</a
+      >
+    </div>
+
+    <section id="ventures" class="section section--first js-section">
+      <div class="content">
+        <h2 class="slogan">Your&nbsp;vision, our&nbsp;mission</h2>
+        <p class="title1 space-shadow">
+          0xVentures are not your regular&nbsp;VCs.
+        </p>
+        <p class="title1 space-shadow">
+          We are users and&nbsp;creators who deeply care about&nbsp;integrating
+          with&nbsp;blockchains and their communities.
+        </p>
+      </div>
+    </section>
+
+    <section id="value" class="section js-section">
+      <div class="content">
+        <h2 class="title-large space-shadow">Our value</h2>
+
+        <p class="title2 space-shadow">
+          We pride ourselves in being value-add investors. With a diverse
+          background and expertise, we bring a unique perspective in terms of
+          marketing, UI/UX design, financing and code development. This opens
+          our investment strategy to multiple sectors, including blockchain
+          specific protocols, gaming, NFTs, DeFi and more. Our recognition both
+          as a brand and individuals, provides unique opportunities to drive
+          engagement across many blockchain communities.
+        </p>
+      </div>
+    </section>
+
+    <section id="dao" class="section js-section">
+      <div class="content">
+        <h2 class="title-large space-shadow">Our DAO</h2>
+
+        <p class="title2 space-shadow">
+          We are a decentralized autonomous organization that functions as a
+          fund with the sole purpose of investing in sector-disrupting projects.
+          Collectively owned and managed by our members, our activity is written
+          directly into blockchain. We have no central leadership, anyone can
+          introduce a change or proposal. This is then discussed by our
+          community until consensus is reached. We believe this is the ideal
+          organizational path to foster community, creativity, and the highest
+          caliber decisions.
+        </p>
+      </div>
+    </section>
+
+    <section id="partners" class="section js-section">
+      <div class="content content--short">
+        <h2 class="title-large space-shadow">Our partners</h2>
+
+        <p class="title2 space-shadow">
+          Our skilled team actively participates with projects we invest in.
+          Partners are chosen by their astute personal vision. Projects are
+          researched through a macro lens and thorough discourse with teams. Our
+          first principle of working with communities brings value through
+          understanding your users and broadband sharing, which leads to organic
+          project expansion.
+        </p>
+      </div>
+
+      <div class="content content--partners">
+        <div class="partner-logos">
+          <a
+            href="https://thorchain.org/"
+            target="_blank"
+            class="parner-logos__a"
+          >
+            <img
+              src="assets/img/partners/partner_logo_thorchain.png"
+              alt="Thorchain"
+              class="parner-logos__item"
+            />
+          </a>
+          <a
+            href="https://thorswap.finance/"
+            target="_blank"
+            class="parner-logos__a"
+            ><img
+              src="assets/img/partners/partner_logo_thorswap.png"
+              alt="Thorswap"
+              class="parner-logos__item"
+            />
+          </a>
+          <a
+            href="https://liquidityprovider.university/"
+            target="_blank"
+            class="parner-logos__a"
+            ><img
+              src="assets/img/partners/partner_logo_lp_university.png"
+              alt="LP University"
+              class="parner-logos__item"
+            />
+          </a>
+          <a href="https://orion.money/" target="_blank" class="parner-logos__a"
+            ><img
+              src="assets/img/partners/partner_logo_orion.png"
+              alt="Orion"
+              class="parner-logos__item"
+            />
+          </a>
+          <a
+            href="https://www.runebase.org/"
+            target="_blank"
+            class="parner-logos__a"
+            ><img
+              src="assets/img/partners/partner_logo_runebase.png"
+              alt="Runebase"
+              class="parner-logos__item"
+            />
+          </a>
+          <a
+            href="https://qicapital.org/"
+            target="_blank"
+            class="parner-logos__a"
+            ><img
+              src="assets/img/partners/partner_logo_qicapital.png"
+              alt="Qi Capital"
+              class="parner-logos__item"
+            />
+          </a>
+          <a
+            href="https://twitter.com/shroomiesNFT"
+            target="_blank"
+            class="parner-logos__a"
+            ><img
+              src="assets/img/partners/partner_logo_shroomies.png"
+              alt="Shroomies"
+              class="parner-logos__item"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="members" class="section js-section">
+      <div class="content content--short">
+        <h2 class="title-large space-shadow">Our members</h2>
+
+        <p class="title2 space-shadow">
+          We are as strong as our combined forces, so each member is critically
+          chosen. Fostering an environment where we work together as a single
+          unit that shares, evolves and brings diverse ideas to fruition.
+        </p>
+      </div>
+      <div class="content content--members js-members"></div>
+    </section>
+
+    <section id="contact" class="section js-section">
+      <div class="content">
+        <h2 class="title-large space-shadow">See the light</h2>
+
+        <p class="title2 space-shadow">
+          We are as strong as our combined forces. Our activity is written into
+          blockchain, but you’ll never find us. The future may be unknown, but
+          the opportunities for both us and our partners are limitless. Speak to
+          us today about working together.
+        </p>
+
+        <p class="title2 space-shadow">
+          Interested? Please fill out the form and we will get back to you
+          shortly. Every application is reviewed thoroughly. Thank&nbsp;you.
+        </p>
+
+        <a
+          href="https://forms.gle/mTiKByTjPn4ydzco6"
+          target="_blank"
+          class="button button--apply"
+          >Apply Now &rarr;</a
+        >
+      </div>
+    </section>
+
+    <footer class=""></footer>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

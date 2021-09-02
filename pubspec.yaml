@@ -1,0 +1,6 @@
+name: ventures
+version: 0.0.1
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+dev_dependencies:
+  sass: ^1.38.0

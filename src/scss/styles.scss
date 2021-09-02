@@ -1,0 +1,14 @@
+//
+// Main styles file
+// only inports here
+// output in assets/css/styles.css
+//
+@use "sass:color";
+
+
+@import 'variables';
+@import 'mixins';
+@import 'globals';
+@import 'typography';
+@import 'navs';
+@import 'sections';

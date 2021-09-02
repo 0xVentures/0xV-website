@@ -1,0 +1,131 @@
+//
+// Mixins
+//
+// usage
+// @include transition;
+
+@mixin transition {
+  transition: all 0.4s ease;
+}
+@mixin transition-bezier {
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+//
+//  Fonts
+//
+
+@mixin body1 {
+  font-size: $font-size-1;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+@mixin body2 {
+  font-size: $font-size--1;
+  line-height: 1rem;
+  font-weight: 300;
+}
+@mixin button {
+  font-size: $font-size--2;
+  line-height: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+@mixin slogan {
+  font-size: $font-size-6;
+  line-height: 1;
+  font-weight: 700;
+  text-align: left;
+  @include tablet-up {
+     font-size: $font-size-7;
+   }
+  @include laptop-up {
+     font-size: $font-size-8;
+   }
+  @include big-desktop-up {
+     font-size: $font-size-9;
+   }
+}
+@mixin title-large {
+  font-size: $font-size-4;
+  line-height: 2rem;
+  font-weight: 700;
+}
+@mixin title1 {
+  font-size: $font-size-3;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+@mixin title2 {
+  font-size: $font-size-2;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+@mixin table {
+  font-size: $font-size--1;
+  line-height: 1rem;
+  font-weight: 400;
+}
+@mixin caption {
+  font-size: $font-size--3;
+  line-height: 0.75rem;
+  font-weight: 400;
+}
+@mixin caption-mini {
+  font-size: $font-size--4;
+  line-height: 0.75rem;
+  font-weight: 400;
+}
+
+@mixin text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+@mixin space-text-shadow {
+  text-shadow: -3px 3px 3px rgba(0,0,0,.25);
+}
+
+@mixin space-shadow {
+  box-shadow: -3px 3px 3px rgba(0,0,0,.25);
+}
+
+
+//
+//  MEDIA
+//
+
+// usage
+//  .my-box {
+//    padding: 10px;
+//
+//    @include laptop-up {
+//      padding: 20px;
+//    }
+//  }
+
+@mixin phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tablet-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin laptop-up {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+@mixin desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

@@ -1,0 +1,180 @@
+//
+// Navs
+//
+
+// Top nav
+.top-nav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  width: 100%;
+  background-color: color.change($background-primary, $alpha: 0.87);
+  @include laptop-up {
+    background-color: transparent;
+  }
+}
+
+.nav-content {
+  width: 100%;
+  height: 2rem;
+}
+
+.nav-btn {
+  @include button;
+  line-height: $space-1;
+  display: inline-block;
+  height: $space-2;
+  padding: $space-05 $space-1;
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  color: $white-secondary;
+}
+
+.nav-btn--menu {
+  @include laptop-up {
+    display: none;
+  }
+}
+
+.nav-logo {
+  top: $space-05;
+  height: $space-1;
+
+  @include laptop-up {
+    display: none;
+  }
+}
+
+// Side nav
+.side-nav-gradient {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 10rem;
+  background: linear-gradient(
+    270deg,
+    color.change($background-dark, $alpha: 0.6) 0%,
+    color.change($background-dark, $alpha: 0.6) 50%,
+    color.change($background-dark, $alpha: 0) 100%
+  );
+}
+.side-nav-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  justify-content: center;
+  flex-flow: column nowrap;
+  @include laptop-up {
+    display: flex;
+  }
+}
+
+// MESSSS
+.side-nav-wrapper--open {
+  display: flex;
+  background-color: $black-primary;
+  left: 0;
+  justify-content: flex-start;
+  top: $space-2;
+  align-items: flex-end;
+}
+
+.side-nav {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: left;
+  width: 10rem;
+}
+
+.side-nav-wrapper--open .side-nav {
+  justify-content: right;
+  width: 100%;
+}
+.side-nav-wrapper--open .side-nav__btn {
+  text-align: right;
+}
+.side-nav-wrapper--open .logo-wrapper {
+  align-items: flex-end;
+  margin-top: $space-1;
+}
+
+.side-nav__btn {
+  @include title2;
+  @include space-text-shadow;
+  color: $white-secondary;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  white-space: nowrap;
+  position: relative;
+  padding: $space-05 $space-1;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+}
+
+.side-nav__btn:hover,
+.side-nav__btn--active {
+  color: $white-primary;
+}
+
+.side-nav__btn--members {
+  @include body2;
+  position: absolute;
+  bottom: 0;
+}
+
+// Logo
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+  text-indent: -9999rem;
+}
+.logo {
+  width: 4rem;
+  margin-bottom: $space-05;
+  opacity: 0.87;
+  @include laptop-up {
+    width: 5rem;
+  }
+}
+.wordmark {
+  width: 4rem;
+  opacity: 0.87;
+  @include laptop-up {
+    width: 5rem;
+  }
+}
+.logo-wrapper:hover * {
+  opacity: 1;
+}
+
+.social-icons {
+  padding: 2rem 1rem;
+}
+
+.social-icon {
+  width: $space-2;
+  height: $space-1;
+  display: inline-block;
+  padding-right: $space-1;
+  opacity: $opacity-faded;
+  filter: #{"invert(1)"};
+
+  &:hover {
+    opacity: $opacity-primary;
+  }
+}
+

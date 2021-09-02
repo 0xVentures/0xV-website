@@ -1,0 +1,209 @@
+//
+// Sections
+//
+
+.back-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-position: 80%;
+}
+
+.content-gradient {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    // $background-dark
+    270deg,
+    color.change($background-dark, $alpha: 0) 0%,
+    color.change($background-dark, $alpha: 0.6) 50%,
+    color.change($background-dark, $alpha: 0.6) 100%
+  );
+
+  @include tablet-up {
+    width: $line-length + $space-4;
+  }
+
+  @include laptop-up {
+    width: $line-length + $space-8;
+  }
+}
+
+.section {
+  position: relative;
+  min-width: 100%;
+
+
+  @include laptop-up {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    min-height: 100vh;
+    justify-content: center;
+    padding-right: 12rem; // TODO
+  }
+}
+
+.section--first {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+  max-width: 100%;
+  width: $line-length;
+  padding: $space-8 $space-1 $space-8;
+  overflow: hidden;
+  @include laptop-up {
+    padding: $space-4 $space-4 $space-8;
+  }
+}
+
+.content--members {
+  width: $line-length * 1.5;
+  max-width: 100%;
+  // bottom same as .content
+  padding: 0 $space-1 $space-8;
+  @include laptop-up {
+    padding: 0 $space-4 $space-8;
+  }
+}
+
+.content--partners {
+  padding: 0 $space-1 $space-8;
+  @include laptop-up {
+    padding: 0 $space-4 $space-8;
+  }
+}
+
+.content--short {
+  padding-bottom: 2rem;
+}
+
+.loading-screen {
+  background-color: $background-primary;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.loading-screen__logo {
+  width: $space-2;
+  animation-name: loadingAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+
+// partners
+
+.partner-logos {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.parner-logos__a {
+  flex: 1 1 100%;
+  @include tablet-up {
+    flex: 1 1 50%;
+  }
+}
+
+.parner-logos__item {
+  height: $space-2;
+  width: auto;
+  margin-top: $space-2;
+}
+
+// members
+
+.members-inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.members-inner::after {
+  content: "";
+  flex: auto;
+}
+.member {
+  padding: 0 $space-05 $space-05 0;
+  display: flex;
+  flex: 1 1 50%;
+  color: $white-primary;
+  text-decoration: none;
+  max-width: 50%;
+  @include tablet-up {
+    flex: 1 1 33.33%;
+    max-width: 33.33%;
+  }
+
+  @include desktop-up {
+    flex: 1 1 25%;
+    max-width: 25%;
+  }
+}
+.member__data {
+  flex: 1 1 auto;
+  background-color: color.change($background-primary, $alpha: 0.38);
+  padding: $space-05;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  &:hover {
+    background-color: color.change($background-primary, $alpha: 0.87);
+  }
+}
+
+.member__img {
+  width: $space-2;
+  height: $space-2;
+  border-radius: 50%;
+  margin-right: $space-05;
+  background-color: $background-dark;
+}
+.member__name {
+  @include body2;
+  @include space-text-shadow;
+  @include desktop-up {
+    @include body1;
+  }
+}
+.member__twitter {
+  @include caption;
+  @include space-text-shadow;
+  color: $white-secondary;
+  @include desktop-up {
+    @include body2;
+  }
+}
+.member:hover .member__name, .member__name:hover {
+}

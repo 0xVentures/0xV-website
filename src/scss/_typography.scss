@@ -1,0 +1,83 @@
+//
+// Typography
+//
+
+h1,
+.title-large {
+  @include title-large;
+}
+h2,
+.title1 {
+  @include title1;
+  margin-bottom: $space-1;
+}
+h3,
+.title2 {
+  @include title2;
+}
+h4,
+.body1 {
+  @include body1;
+  font-weight: 700;
+}
+
+p,
+.body1 {
+  @include body1;
+  @include text-shadow;
+}
+p + p {
+  margin-top: $space-1;
+}
+.body2 {
+  @include body2;
+}
+
+.caption {
+  @include caption;
+}
+
+.caption--mini {
+  @include caption-mini;
+}
+
+button,
+.button {
+  @include button;
+  padding: $space-1 $space-05;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button--apply {
+  @include space-shadow;
+  @include title2;
+  padding: $space-05 $space-4 ;
+  margin-top: $space-2;
+  background-color: $copper-light;
+  color: $black-primary;
+  border: 1px solid transparent;
+  border-radius: 3px;
+
+  &:hover {
+    border-color: $white-secondary;
+  }
+}
+
+
+.slogan {
+  @include slogan;
+  @include space-text-shadow;
+  margin-bottom: $space-2;
+}
+
+.space-shadow {
+  @include space-text-shadow;
+}
+
+.space-1 {
+  margin-bottom: $space-1;
+}
+.space-2 {
+  margin-bottom: $space-2;
+}
