@@ -62,6 +62,7 @@ const members = new Map([
   ["BumQuack1337", "Ochhii"],
   ["0x_luc", "0xLuc"],
   ["thorchain_newby", "Thorchain.Newbie"],
+  ["MangoPeaches23", "MangoPeaches"],
 ]);
 
 export default members;
