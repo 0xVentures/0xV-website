@@ -18,7 +18,7 @@ const members = new Map([
   ["warlockofmirth", "MoDee227"],
   ["thorlunatic", "shaye"],
   ["hoodlum1349", "Hoodlum"],
-  ["v__RaBBiT__v", "vRabbitv"],
+  ["v__RaBBiT__v", "vRaBBiTv"],
   ["bountyxxhunter", "Demandalorian"],
   ["jimbobkos", "Jimbobkos"],
   ["fakk2", "Juggernaut"],
