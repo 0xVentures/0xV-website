@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <link href="https://0xventures.org/" rel="canonical">
+    <link href="https://0xventures.org/" rel="canonical" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -24,10 +24,7 @@
       content="0xVentures are not your regular VCs. We are users and creators who deeply care about integrating
           with blockchains and their communities."
     />
-    <meta
-      name="twitter:image"
-      content="//assets/img/twitter_card.png"
-    />
+    <meta name="twitter:image" content="//assets/img/twitter_card.png" />
   </head>
   <body>
     <video
@@ -39,16 +36,15 @@
       class="back-video"
       onloadeddata="console.log('Playing file ' + this.currentSrc);"
     >
-
       <!-- add <source src="webm" type="video/webm"> -->
     </video>
     <script>
       var injectVideo = (function name(params) {
-        const videoEl = document.querySelector('.back-video');
+        const videoEl = document.querySelector(".back-video");
         const isWide = window.innerWidth >= window.innerHeight;
         const isSmallWide = window.innerWidth <= 1280;
-        const isSmallTall = window.innerHeight<= 1000;
-        var source = document.createElement('source');
+        const isSmallTall = window.innerHeight <= 1000;
+        var source = document.createElement("source");
         source.type = "video/mp4";
 
         if (!isWide) {
@@ -56,20 +52,20 @@
         }
 
         if (!isWide && isSmallTall) {
-          source.src = "https://link.eu1.storjshare.io/raw/jvmr3yt2bewngc7ct7ubcai7hirq/ventures%2Fmoon_tall_720.mp4";
-        }
-        else if (!isWide && !isSmallTall) {
-          source.src = "https://link.eu1.storjshare.io/raw/jv4l4jvasqhe55r5gp3usd7gpm3q/ventures%2Fmoon_tall_1080.mp4";
-        }
-        else if (isWide && isSmallWide) {
-          source.src = "https://link.eu1.storjshare.io/raw/jv4azpz5foop4e6mpvnpwown6j4q/ventures%2Fmoon_wide_720.mp4";
-        }
-        else {
-          source.src = "https://link.eu1.storjshare.io/raw/jxsanse7is5j7iydwfn4dyetphuq/ventures%2Fmoon_wide_1080.mp4";
+          source.src =
+            "https://link.eu1.storjshare.io/raw/jvmr3yt2bewngc7ct7ubcai7hirq/ventures%2Fmoon_tall_720.mp4";
+        } else if (!isWide && !isSmallTall) {
+          source.src =
+            "https://link.eu1.storjshare.io/raw/jv4l4jvasqhe55r5gp3usd7gpm3q/ventures%2Fmoon_tall_1080.mp4";
+        } else if (isWide && isSmallWide) {
+          source.src =
+            "https://link.eu1.storjshare.io/raw/jv4azpz5foop4e6mpvnpwown6j4q/ventures%2Fmoon_wide_720.mp4";
+        } else {
+          source.src =
+            "https://link.eu1.storjshare.io/raw/jxsanse7is5j7iydwfn4dyetphuq/ventures%2Fmoon_wide_1080.mp4";
         }
 
         videoEl.appendChild(source);
-
       })();
     </script>
 
@@ -211,6 +207,7 @@
               class="parner-logos__item"
             />
           </a>
+
           <a
             href="https://thorswap.finance/"
             target="_blank"
@@ -221,6 +218,7 @@
               class="parner-logos__item"
             />
           </a>
+
           <a
             href="https://liquidityprovider.university/"
             target="_blank"
@@ -231,13 +229,7 @@
               class="parner-logos__item"
             />
           </a>
-          <a href="https://orion.money/" target="_blank" class="parner-logos__a"
-            ><img
-              src="assets/img/partners/partner_logo_orion.png"
-              alt="Orion"
-              class="parner-logos__item"
-            />
-          </a>
+
           <a
             href="https://www.runebase.org/"
             target="_blank"
@@ -248,6 +240,18 @@
               class="parner-logos__item"
             />
           </a>
+
+          <a
+            href="https://orion.money/"
+            target="_blank"
+            class="parner-logos__a"
+            ><img
+              src="assets/img/partners/partner_logo_orion.png"
+              alt="Orion"
+              class="parner-logos__item"
+            />
+          </a>
+
           <a
             href="https://qicapital.org/"
             target="_blank"
@@ -258,6 +262,29 @@
               class="parner-logos__item"
             />
           </a>
+
+          <a
+            href="https://infinityskies.io/"
+            target="_blank"
+            class="parner-logos__a"
+            ><img
+              src="assets/img/partners/partner_logo_infinityskies.png"
+              alt="Infinity Skies"
+              class="parner-logos__item parner-logos__item--heigh"
+            />
+          </a>
+
+          <a
+            href="https://bnplpay.io/"
+            target="_blank"
+            class="parner-logos__a"
+            ><img
+              src="assets/img/partners/partner_logo_bnpl.png"
+              alt="BNPL"
+              class="parner-logos__item parner-logos__item--heigh"
+            />
+          </a>
+
           <a
             href="https://twitter.com/shroomiesNFT"
             target="_blank"
@@ -268,21 +295,9 @@
               class="parner-logos__item"
             />
           </a>
-          <a
-            href="https://infinityskies.io/"
-            target="_blank"
-            class="parner-logos__a"
-            ><img
-              src="assets/img/partners/partner_logo_infinityskies.png"
-              alt="Infinity Skies"
-              class="parner-logos__item"
-              style="margin-top: 1.5rem; height: 2.5rem;"
-            />
-          </a>
         </div>
       </div>
     </section>
-
 
     <section id="members" class="section js-section">
       <div class="content content--short">
