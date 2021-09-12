@@ -114,6 +114,7 @@
 
 .loading-screen__logo {
   width: $space-2;
+  transform-style: preserve-3d;
   animation-name: loadingAnimation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
