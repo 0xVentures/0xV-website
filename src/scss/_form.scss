@@ -1,0 +1,107 @@
+//
+
+.contact-form {
+  @include border-radius;
+  max-width: $line-length;
+  margin-top: $space-2;
+  padding: $space-1;
+  background-color: color.change($background-primary, $alpha: 0.60);
+  @include tablet-up {
+    padding: $space-1 $space-2 $space-2;
+  }
+}
+
+.form--section {
+  margin-bottom: $space-1;
+
+}
+.form--label {
+  @include body2;
+  display: block;
+  color: $white-secondary;
+
+  @include tablet-up {
+    @include body1;
+  }
+}
+
+.form-input {
+  @include transition;
+  @include body1;
+  @include border-radius;
+
+  color: $white-primary;
+
+  display: block;
+  margin-top: $space-05;
+  background: color.change($background-dark, $alpha: 0.38);
+  border: 1px solid transparent;
+  width: 100%;
+
+  padding: $space-05 $space-1;
+  &:active, &:focus {
+    background: color.change($background-dark, $alpha: 0.60);
+    outline: 0;
+  }
+}
+
+.form-input--textarea {
+  height: $space-8;
+}
+
+::-webkit-search-decoration
+{
+	display:none;
+}
+
+.form-button {
+  @include space-shadow;
+  @include body1;
+  @include transition;
+
+  padding: $space-05 $space-4 ;
+  margin-top: $space-1;
+  background-color: $copper-light;
+  color: $black-primary;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  width: 100%;
+
+  @include tablet-up {
+    width: auto;
+    @include title2;
+  }
+
+  &:hover {
+    border-color: $white-secondary;
+  }
+}
+
+.form-button--loading {
+  color: $black-faded;
+  opacity: 0.60;
+}
+.form-button--done {
+  opacity: 0;
+}
+
+.form-alert {
+  @include transition;
+  @include body2;
+  margin: $space-05 0;
+  display: none;
+}
+
+.form-alert--wrong {
+color: $red-light;
+}
+
+.form-alert--thanks {
+  @include body2;
+  margin: $space-05 0;
+  display: none;
+}
+
+.form-alert--visible {
+  display: block;
+}

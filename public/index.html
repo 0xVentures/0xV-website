@@ -25,6 +25,16 @@
           with blockchains and their communities."
     />
     <meta name="twitter:image" content="//assets/img/twitter_card.png" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_HNsKxudE9yvst33JDdpgg");
+      })();
+    </script>
   </head>
   <body>
     <video
@@ -34,7 +44,6 @@
       loop
       poster="assets/img/first_frame_3.1.1_wide.jpg"
       class="back-video"
-      onloadeddata="console.log('Playing file ' + this.currentSrc);"
     >
       <!-- add <source src="webm" type="video/webm"> -->
     </video>
@@ -241,10 +250,7 @@
             />
           </a>
 
-          <a
-            href="https://orion.money/"
-            target="_blank"
-            class="parner-logos__a"
+          <a href="https://orion.money/" target="_blank" class="parner-logos__a"
             ><img
               src="assets/img/partners/partner_logo_orion.png"
               alt="Orion"
@@ -274,10 +280,7 @@
             />
           </a>
 
-          <a
-            href="https://bnplpay.io/"
-            target="_blank"
-            class="parner-logos__a"
+          <a href="https://bnplpay.io/" target="_blank" class="parner-logos__a"
             ><img
               src="assets/img/partners/partner_logo_bnpl.png"
               alt="BNPL"
@@ -296,10 +299,7 @@
             />
           </a>
 
-          <a
-            href="https://cyclos.io/"
-            target="_blank"
-            class="parner-logos__a"
+          <a href="https://cyclos.io/" target="_blank" class="parner-logos__a"
             ><img
               src="assets/img/partners/partner_logo_cyclos.png"
               alt="Cyclos"
@@ -339,12 +339,73 @@
           shortly. Every application is reviewed thoroughly. Thank&nbsp;you.
         </p>
 
-        <a
-          href="https://forms.gle/mTiKByTjPn4ydzco6"
-          target="_blank"
-          class="button button--apply"
-          >Apply Now &rarr;</a
+        <form
+          action="javascript:void(0);"
+          method="get"
+          class="contact-form js-contact-form"
+          id="contactForm"
         >
+          <div class="form--section">
+            <label class="form--label" for="email">Your Email</label>
+            <input class="form-input" type="email" name="email" id="email" />
+          </div>
+
+          <div class="form--section">
+            <label class="form--label" for="projectName">Project Name</label>
+            <input
+              class="form-input"
+              type="text"
+              name="projectName"
+              id="projectName"
+            />
+          </div>
+
+          <div class="form--section">
+            <label class="form--label" for="website">Project Website</label>
+            <input class="form-input" type="text" name="website" id="website" />
+          </div>
+
+          <div class="form--section">
+            <label class="form--label" for="twitter">Project Twitter</label>
+            <input class="form-input" type="text" name="twitter" id="twitter" />
+          </div>
+
+          <div class="form--section">
+            <label class="form--label" for="nameContact">Name of Contact</label>
+            <input
+              class="form-input"
+              type="text"
+              name="nameContact"
+              id="nameContact"
+            />
+          </div>
+
+          <div class="form--section">
+            <label class="form--label" for="contactPosition"
+              >Contact's Position in Project</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              name="contactPosition"
+              id="contactPosition"
+            />
+          </div>
+
+          <div class="form--section">
+            <label class="form--label" for="description"
+              >Description of Project</label
+            >
+            <textarea
+              class="form-input form-input--textarea"
+              id="description"
+              name="description"
+            ></textarea>
+          </div>
+
+          <button class="button form-button js-apply">Apply Now</button>
+          <div class="form-alert js-alert"></div>
+        </form>
       </div>
     </section>
 

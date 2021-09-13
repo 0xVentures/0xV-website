@@ -16,7 +16,7 @@ export default async function getProfiles() {
 
   });
 
-  console.log(membersImages);
+  // console.log(membersImages);
 
   return membersImages;
 }

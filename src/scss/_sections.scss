@@ -177,12 +177,12 @@
   }
 }
 .member__data {
+  @include border-radius;
   flex: 1 1 auto;
   background-color: color.change($background-primary, $alpha: 0.38);
   padding: $space-05;
   display: flex;
   align-items: center;
-  border-radius: 3px;
   &:hover {
     background-color: color.change($background-primary, $alpha: 0.87);
   }

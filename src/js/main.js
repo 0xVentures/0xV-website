@@ -1,6 +1,7 @@
 import anime from "animejs";
 import helpers from "./helpers.js";
 import getProfiles from "./twitter.js";
+import { sendApplication } from "./email.js";
 
 var animationsxV = (function () {
   const video = document.querySelector(".back-video");
@@ -33,6 +34,8 @@ var animationsxV = (function () {
 
     addProfileImages();
     playIntroAnimation();
+
+    sendApplication();
   })();
 
   function hideSideNav() {

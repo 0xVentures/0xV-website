@@ -6,7 +6,8 @@
   "main": "index.html",
   "dependencies": {
     "animejs": "^3.2.1",
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "validate.js": "^0.13.1"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",

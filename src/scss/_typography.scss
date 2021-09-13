@@ -49,20 +49,7 @@ button,
   display: inline-block;
 }
 
-.button--apply {
-  @include space-shadow;
-  @include title2;
-  padding: $space-05 $space-4 ;
-  margin-top: $space-2;
-  background-color: $copper-light;
-  color: $black-primary;
-  border: 1px solid transparent;
-  border-radius: 3px;
 
-  &:hover {
-    border-color: $white-secondary;
-  }
-}
 
 
 .slogan {
