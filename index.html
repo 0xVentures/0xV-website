@@ -25,6 +25,16 @@
           with blockchains and their communities."
     />
     <meta name="twitter:image" content="//assets/img/twitter_card.png" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_HNsKxudE9yvst33JDdpgg");
+      })();
+    </script>
   </head>
   <body>
     <video
@@ -34,7 +44,6 @@
       loop
       poster="assets/img/first_frame_3.1.1_wide.jpg"
       class="back-video"
-      onloadeddata="console.log('Playing file ' + this.currentSrc);"
     >
       <!-- add <source src="webm" type="video/webm"> -->
     </video>
@@ -241,10 +250,7 @@
             />
           </a>
 
-          <a
-            href="https://orion.money/"
-            target="_blank"
-            class="parner-logos__a"
+          <a href="https://orion.money/" target="_blank" class="parner-logos__a"
             ><img
               src="assets/img/partners/partner_logo_orion.png"
               alt="Orion"
@@ -274,10 +280,7 @@
             />
           </a>
 
-          <a
-            href="https://bnplpay.io/"
-            target="_blank"
-            class="parner-logos__a"
+          <a href="https://bnplpay.io/" target="_blank" class="parner-logos__a"
             ><img
               src="assets/img/partners/partner_logo_bnpl.png"
               alt="BNPL"
@@ -296,10 +299,7 @@
             />
           </a>
 
-          <a
-            href="https://cyclos.io/"
-            target="_blank"
-            class="parner-logos__a"
+          <a href="https://cyclos.io/" target="_blank" class="parner-logos__a"
             ><img
               src="assets/img/partners/partner_logo_cyclos.png"
               alt="Cyclos"
@@ -327,24 +327,93 @@
       <div class="content">
         <h2 class="title-large space-shadow">See the light</h2>
 
-        <p class="title2 space-shadow">
+        <p class="title2 space-shadow space-2">
           We are as strong as our combined forces. Our activity is written into
           blockchain, but you’ll never find us. The future may be unknown, but
           the opportunities for both us and our partners are limitless. Speak to
           us today about working together.
         </p>
 
-        <p class="title2 space-shadow">
-          Interested? Please fill out the form and we will get back to you
-          shortly. Every application is reviewed thoroughly. Thank&nbsp;you.
-        </p>
+        <div class="show-form-wrapper js-show-form-wrapper">
+          <button class="button form-button js-show-form" type="button">Contact us</button>
+        </div>
 
-        <a
-          href="https://forms.gle/mTiKByTjPn4ydzco6"
-          target="_blank"
-          class="button button--apply"
-          >Apply Now &rarr;</a
+        <div class="form-wrapper js-form-wrapper">
+        <form
+          action="javascript:void(0);"
+          method="get"
+          class="contact-form contact-form--hidden js-contact-form"
+          id="contactForm"
         >
+          <p class="body1 form-section">
+            Interested? Please fill out the form and we will get back to you
+            shortly. Every application is reviewed thoroughly. Thank&nbsp;you.
+          </p>
+
+          <div class="form-section">
+            <label class="form--label" for="email">Your Email</label>
+            <input class="form-input" type="email" name="email" id="email" />
+          </div>
+
+          <div class="form-section">
+            <label class="form--label" for="projectName">Project Name</label>
+            <input
+              class="form-input"
+              type="text"
+              name="projectName"
+              id="projectName"
+            />
+          </div>
+
+          <div class="form-section">
+            <label class="form--label" for="website">Project Website</label>
+            <input class="form-input" type="text" name="website" id="website" />
+          </div>
+
+          <div class="form-section">
+            <label class="form--label" for="twitter">Project Twitter</label>
+            <input class="form-input" type="text" name="twitter" id="twitter" />
+          </div>
+
+          <div class="form-section">
+            <label class="form--label" for="nameContact">Name of Contact</label>
+            <input
+              class="form-input"
+              type="text"
+              name="nameContact"
+              id="nameContact"
+            />
+          </div>
+
+          <div class="form-section">
+            <label class="form--label" for="contactPosition"
+              >Contact's Position in Project</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              name="contactPosition"
+              id="contactPosition"
+            />
+          </div>
+
+          <div class="form-section">
+            <label class="form--label" for="description"
+              >Description of Project</label
+            >
+            <textarea
+              class="form-input form-input--textarea"
+              id="description"
+              name="description"
+            ></textarea>
+          </div>
+
+          <div class="form--section">
+            <button class="button form-button js-apply">Apply Now</button>
+            <div class="form-alert js-alert"></div>
+          </div>
+        </form>
+        </div>
       </div>
     </section>
 
