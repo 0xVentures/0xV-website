@@ -1,7 +1,7 @@
 import anime from "animejs";
 import helpers from "./helpers.js";
 import getProfiles from "./twitter.js";
-import { sendApplication } from "./email.js";
+import { emailApplication } from "./email.js";
 
 var animationsxV = (function () {
   const video = document.querySelector(".back-video");
@@ -14,6 +14,7 @@ var animationsxV = (function () {
   const contentGradient = document.querySelector(".js-content-gradient");
   var isLoading = true;
   var navIsOpen = false;
+  var openSections = [];
   // check if nav is displayed
   // if not, do not animate it
   const navIsVisible =
@@ -21,11 +22,6 @@ var animationsxV = (function () {
       .display !== "none";
 
   var init = (function () {
-    // hide sections
-    // sections.forEach((section) => {
-    //   section.style.display = "none";
-    // });
-
     // test
     ventures.style.opacity = "0";
 
@@ -35,8 +31,32 @@ var animationsxV = (function () {
     addProfileImages();
     playIntroAnimation();
 
-    sendApplication();
+    emailApplication();
+
+    // hide sections
+    if ("IntersectionObserver" in window) {
+      sections.forEach((section) => {
+        section.style.opacity = "0.01";
+      });
+    }
+
+    var observer = new IntersectionObserver(observerOnChange, {
+      threshold: [0.5],
+    });
+
+    [...sections].forEach((section) => {
+      observer.observe(section);
+    });
   })();
+
+  function observerOnChange(changes, observer) {
+    changes.forEach((change) => {
+      if (change.intersectionRatio > 0) {
+        observer.unobserve(change.target);
+        showSection(change.target.id);
+      }
+    });
+  }
 
   function hideSideNav() {
     if (navIsVisible) {
@@ -95,7 +115,7 @@ var animationsxV = (function () {
         isLoading = false;
 
         // open first section
-        sectionOpen("ventures");
+        showFirstSection();
       },
     });
   }
@@ -129,12 +149,8 @@ var animationsxV = (function () {
       );
   }
 
-  function sectionOpen(sectionId) {
-    if (sectionId === null) {
-      return;
-    }
-
-    const section = document.querySelector("#" + sectionId);
+  function showFirstSection() {
+    const section = document.querySelector("#ventures");
     const header = section.querySelector("h2");
     const paragraphs = section.querySelectorAll("p");
     header.innerHTML = header.textContent.replace(
@@ -150,8 +166,6 @@ var animationsxV = (function () {
     });
 
     const paragraphWords = section.querySelectorAll(".pword");
-
-    console.log(sectionId);
 
     section.style.display = "";
     section.style.opacity = "";
@@ -178,14 +192,52 @@ var animationsxV = (function () {
           navAnimation();
         },
       });
-    // .add(
-    //   {
-    //     targets: contentGradient,
-    //     opacity: [0, 1],
-    //     duration: 1600,
-    //   },
-    //   0
-    // );
+  }
+
+  function showSection(sectionId) {
+    if (!sectionId) {
+      return;
+    }
+    if (openSections.includes(sectionId)) {
+      return;
+    }
+    openSections.push(sectionId);
+
+    const section = document.querySelector("#" + sectionId);
+    const header = section.querySelector("h2");
+    const paragraphs = section.querySelectorAll("p");
+    const elements = section.querySelectorAll(".js-section-element");
+    section.style.display = "";
+    section.style.opacity = "";
+
+    var timeline = anime.timeline({
+      easing: "easeInSine",
+    });
+
+    timeline
+      .add({
+        targets: header,
+        opacity: [0, 1],
+        duration: 800,
+      })
+      .add(
+        {
+          targets: paragraphs,
+          opacity: [0, 1],
+          duration: 800,
+          delay: anime.stagger(80),
+        },
+        400
+      )
+      .add(
+        {
+          targets: elements,
+          opacity: [0, 1],
+          duration: 800,
+          delay: anime.stagger(80),
+        },
+        400
+      );
   }
 
   async function addProfileImages() {
@@ -202,7 +254,7 @@ var animationsxV = (function () {
       a.target = "_blank";
 
       var wrapper = document.createElement("div");
-      wrapper.classList.add("member__data");
+      wrapper.classList.add("member__data", "js-section-element");
 
       var img = document.createElement("img");
       img.classList.add("member__img");
@@ -276,6 +328,3 @@ var animationsxV = (function () {
     }
   }
 })();
-
-// maybe?
-// var sectionAnimation = (function () {});

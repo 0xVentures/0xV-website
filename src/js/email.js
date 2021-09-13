@@ -1,6 +1,6 @@
 import anime, { timeline } from "animejs";
 
-export function sendApplication() {
+export function emailApplication() {
   const formWrapper = document.querySelector(".form-wrapper");
   const form = document.querySelector(".js-contact-form");
   const applyButton = document.querySelector(".js-apply");
@@ -104,9 +104,29 @@ export function sendApplication() {
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         alert.innerHTML = "Thank you. Your application is on its way.";
-        alert.classList.remove("form-alert--wrong");
-        alert.classList.add("form-alert--thanks", "form-alert--visible");
-        applyButton.classList.add("form-button--done");
+        if (alert.classList.contains("form-alert--wrong")) {
+          alert.classList.remove("form-alert--wrong");
+        } else {
+          alert.classList.add("form-alert--thanks", "form-alert--visible");
+          var showAlert = anime({
+            easing: "easeInCubic",
+            duration: 1000,
+            targets: alert,
+            opacity: [0, 1],
+          });
+        }
+
+        var hideButtonAnime = anime({
+          easing: "easeOutCubic",
+          duration: 1000,
+          targets: applyButton.parentNode,
+          opacity: [1, 0],
+          height: 0,
+          margin: 0,
+          complete() {
+            applyButton.classList.add("hidden");
+          },
+        });
       },
       function (error) {
         console.log("FAILED...", error);

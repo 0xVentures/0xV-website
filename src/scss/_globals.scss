@@ -35,7 +35,6 @@ html:focus-within {
 }
 
 html {
-  display: block;
   background: $background-primary center center no-repeat scroll;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // TODO
   -webkit-text-size-adjust: 100%;
@@ -45,7 +44,6 @@ html {
 }
 html,
 body {
-  height: 100%;
   width: auto;
   margin: 0;
   padding: 0;

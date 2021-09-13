@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css?v1.1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css?v1.2.0" />
 
     <link href="https://0xventures.org/" rel="canonical" />
 
@@ -143,7 +143,7 @@
       >
     </div>
 
-    <section id="ventures" class="section section--first js-section">
+    <section id="ventures" class="section section--first">
       <div class="content">
         <h2 class="slogan">Your&nbsp;vision, our&nbsp;mission</h2>
         <p class="title1 space-shadow">
@@ -158,7 +158,7 @@
 
     <section id="value" class="section js-section">
       <div class="content">
-        <h2 class="title-large space-shadow">Our value</h2>
+        <h2 data-xtarget="value" class="title-large space-shadow">Our value</h2>
 
         <p class="title2 space-shadow">
           We pride ourselves in being value-add investors. With a diverse
@@ -174,7 +174,7 @@
 
     <section id="dao" class="section js-section">
       <div class="content">
-        <h2 class="title-large space-shadow">Our DAO</h2>
+        <h2 data-xtarget="dao" class="title-large space-shadow">Our DAO</h2>
 
         <p class="title2 space-shadow">
           We are a decentralized autonomous organization that functions as a
@@ -191,7 +191,7 @@
 
     <section id="partners" class="section js-section">
       <div class="content content--short">
-        <h2 class="title-large space-shadow">Our partners</h2>
+        <h2 data-xtarget="partners" class="title-large space-shadow">Our partners</h2>
 
         <p class="title2 space-shadow">
           Our skilled team actively participates with projects we invest in.
@@ -208,7 +208,7 @@
           <a
             href="https://thorchain.org/"
             target="_blank"
-            class="parner-logos__a"
+            class="parner-logos__a js-section-element"
           >
             <img
               src="assets/img/partners/partner_logo_thorchain.png"
@@ -220,7 +220,7 @@
           <a
             href="https://thorswap.finance/"
             target="_blank"
-            class="parner-logos__a"
+            class="parner-logos__a js-section-element"
             ><img
               src="assets/img/partners/partner_logo_thorswap.png"
               alt="Thorswap"
@@ -231,7 +231,7 @@
           <a
             href="https://liquidityprovider.university/"
             target="_blank"
-            class="parner-logos__a"
+            class="parner-logos__a js-section-element"
             ><img
               src="assets/img/partners/partner_logo_lp_university.png"
               alt="LP University"
@@ -242,7 +242,7 @@
           <a
             href="https://www.runebase.org/"
             target="_blank"
-            class="parner-logos__a"
+            class="parner-logos__a js-section-element"
             ><img
               src="assets/img/partners/partner_logo_runebase.png"
               alt="Runebase"
@@ -250,7 +250,10 @@
             />
           </a>
 
-          <a href="https://orion.money/" target="_blank" class="parner-logos__a"
+          <a
+            href="https://orion.money/"
+            target="_blank"
+            class="parner-logos__a js-section-element"
             ><img
               src="assets/img/partners/partner_logo_orion.png"
               alt="Orion"
@@ -261,7 +264,7 @@
           <a
             href="https://qicapital.org/"
             target="_blank"
-            class="parner-logos__a"
+            class="parner-logos__a js-section-element"
             ><img
               src="assets/img/partners/partner_logo_qicapital.png"
               alt="Qi Capital"
@@ -272,7 +275,7 @@
           <a
             href="https://infinityskies.io/"
             target="_blank"
-            class="parner-logos__a"
+            class="parner-logos__a js-section-element"
             ><img
               src="assets/img/partners/partner_logo_infinityskies.png"
               alt="Infinity Skies"
@@ -280,7 +283,10 @@
             />
           </a>
 
-          <a href="https://bnplpay.io/" target="_blank" class="parner-logos__a"
+          <a
+            href="https://bnplpay.io/"
+            target="_blank"
+            class="parner-logos__a js-section-element"
             ><img
               src="assets/img/partners/partner_logo_bnpl.png"
               alt="BNPL"
@@ -291,7 +297,7 @@
           <a
             href="https://twitter.com/shroomiesNFT"
             target="_blank"
-            class="parner-logos__a"
+            class="parner-logos__a js-section-element"
             ><img
               src="assets/img/partners/partner_logo_shroomies.png"
               alt="Shroomies"
@@ -299,7 +305,10 @@
             />
           </a>
 
-          <a href="https://cyclos.io/" target="_blank" class="parner-logos__a"
+          <a
+            href="https://cyclos.io/"
+            target="_blank"
+            class="parner-logos__a js-section-element"
             ><img
               src="assets/img/partners/partner_logo_cyclos.png"
               alt="Cyclos"
@@ -312,7 +321,7 @@
 
     <section id="members" class="section js-section">
       <div class="content content--short">
-        <h2 class="title-large space-shadow">Our members</h2>
+        <h2 data-xtarget="members" class="title-large space-shadow">Our members</h2>
 
         <p class="title2 space-shadow">
           We are as strong as our combined forces, so each member is critically
@@ -325,7 +334,7 @@
 
     <section id="contact" class="section js-section">
       <div class="content">
-        <h2 class="title-large space-shadow">See the light</h2>
+        <h2 data-xtarget="contact" class="title-large space-shadow">See the light</h2>
 
         <p class="title2 space-shadow space-2">
           We are as strong as our combined forces. Our activity is written into
@@ -334,85 +343,101 @@
           us today about working together.
         </p>
 
-        <div class="show-form-wrapper js-show-form-wrapper">
-          <button class="button form-button js-show-form" type="button">Contact us</button>
+        <div class="show-form-wrapper js-section-element">
+          <button class="button form-button js-show-form" type="button">
+            Contact us
+          </button>
         </div>
 
         <div class="form-wrapper js-form-wrapper">
-        <form
-          action="javascript:void(0);"
-          method="get"
-          class="contact-form contact-form--hidden js-contact-form"
-          id="contactForm"
-        >
-          <p class="body1 form-section">
-            Interested? Please fill out the form and we will get back to you
-            shortly. Every application is reviewed thoroughly. Thank&nbsp;you.
-          </p>
+          <form
+            action="javascript:void(0);"
+            method="get"
+            class="contact-form contact-form--hidden js-contact-form"
+            id="contactForm"
+          >
+            <p class="body1 form-section">
+              Interested? Please fill out the form and we will get back to you
+              shortly. Every application is reviewed thoroughly. Thank&nbsp;you.
+            </p>
 
-          <div class="form-section">
-            <label class="form--label" for="email">Your Email</label>
-            <input class="form-input" type="email" name="email" id="email" />
-          </div>
+            <div class="form-section">
+              <label class="form--label" for="email">Your Email</label>
+              <input class="form-input" type="email" name="email" id="email" />
+            </div>
 
-          <div class="form-section">
-            <label class="form--label" for="projectName">Project Name</label>
-            <input
-              class="form-input"
-              type="text"
-              name="projectName"
-              id="projectName"
-            />
-          </div>
+            <div class="form-section">
+              <label class="form--label" for="projectName">Project Name</label>
+              <input
+                class="form-input"
+                type="text"
+                name="projectName"
+                id="projectName"
+              />
+            </div>
 
-          <div class="form-section">
-            <label class="form--label" for="website">Project Website</label>
-            <input class="form-input" type="text" name="website" id="website" />
-          </div>
+            <div class="form-section">
+              <label class="form--label" for="website">Project Website</label>
+              <input
+                class="form-input"
+                type="text"
+                name="website"
+                id="website"
+              />
+            </div>
 
-          <div class="form-section">
-            <label class="form--label" for="twitter">Project Twitter</label>
-            <input class="form-input" type="text" name="twitter" id="twitter" />
-          </div>
+            <div class="form-section">
+              <label class="form--label" for="twitter">Project Twitter</label>
+              <input
+                class="form-input"
+                type="text"
+                name="twitter"
+                id="twitter"
+              />
+            </div>
 
-          <div class="form-section">
-            <label class="form--label" for="nameContact">Name of Contact</label>
-            <input
-              class="form-input"
-              type="text"
-              name="nameContact"
-              id="nameContact"
-            />
-          </div>
+            <div class="form-section">
+              <label class="form--label" for="nameContact"
+                >Name of Contact</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="nameContact"
+                id="nameContact"
+              />
+            </div>
 
-          <div class="form-section">
-            <label class="form--label" for="contactPosition"
-              >Contact's Position in Project</label
-            >
-            <input
-              class="form-input"
-              type="text"
-              name="contactPosition"
-              id="contactPosition"
-            />
-          </div>
+            <div class="form-section">
+              <label class="form--label" for="contactPosition"
+                >Contact's Position in Project</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="contactPosition"
+                id="contactPosition"
+              />
+            </div>
 
-          <div class="form-section">
-            <label class="form--label" for="description"
-              >Description of Project</label
-            >
-            <textarea
-              class="form-input form-input--textarea"
-              id="description"
-              name="description"
-            ></textarea>
-          </div>
+            <div class="form-section">
+              <label class="form--label" for="description"
+                >Description of Project</label
+              >
+              <textarea
+                class="form-input form-input--textarea"
+                id="description"
+                name="description"
+              ></textarea>
+            </div>
 
-          <div class="form--section">
-            <button class="button form-button js-apply">Apply Now</button>
-            <div class="form-alert js-alert"></div>
-          </div>
-        </form>
+            <div class="form-section">
+              <button class="button form-button js-apply">Apply Now</button>
+            </div>
+            <div class="form-section">
+              <div class="form-alert js-alert"></div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
