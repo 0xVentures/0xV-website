@@ -41,11 +41,11 @@ var animationsxV = (function () {
     }
 
     var observer = new IntersectionObserver(observerOnChange, {
-      threshold: [0.5],
+      threshold: [1.0],
     });
 
     [...sections].forEach((section) => {
-      observer.observe(section);
+      observer.observe(section.querySelector("h2"));
     });
   })();
 
@@ -53,7 +53,7 @@ var animationsxV = (function () {
     changes.forEach((change) => {
       if (change.intersectionRatio > 0) {
         observer.unobserve(change.target);
-        showSection(change.target.id);
+        showSection(change.target.dataset.xtarget);
       }
     });
   }
@@ -158,14 +158,7 @@ var animationsxV = (function () {
       "<span class='word'>$&</span>"
     );
     const headerWords = header.querySelectorAll(".word");
-    paragraphs.forEach((paragraph) => {
-      paragraph.innerHTML = paragraph.textContent.replace(
-        /,?[a-zA-Z0-9][a-zA-Z0-9]*(,|.)?/g,
-        "<span class='pword'>$&</span>"
-      );
-    });
 
-    const paragraphWords = section.querySelectorAll(".pword");
 
     section.style.display = "";
     section.style.opacity = "";
@@ -183,10 +176,10 @@ var animationsxV = (function () {
         delay: anime.stagger(400),
       })
       .add({
-        targets: paragraphWords,
+        targets: paragraphs,
         opacity: [0, 1],
-        duration: 600,
-        delay: anime.stagger(80),
+        duration: 1200,
+        delay: anime.stagger(1200),
         complete() {
           // open nav
           navAnimation();
@@ -218,14 +211,14 @@ var animationsxV = (function () {
       .add({
         targets: header,
         opacity: [0, 1],
-        duration: 800,
+        duration: 1200,
       })
       .add(
         {
           targets: paragraphs,
           opacity: [0, 1],
           duration: 800,
-          delay: anime.stagger(80),
+          delay: anime.stagger(400),
         },
         400
       )
@@ -234,9 +227,8 @@ var animationsxV = (function () {
           targets: elements,
           opacity: [0, 1],
           duration: 800,
-          delay: anime.stagger(80),
+          delay: anime.stagger(40),
         },
-        400
       );
   }
 

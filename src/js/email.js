@@ -5,7 +5,6 @@ export function emailApplication() {
   const form = document.querySelector(".js-contact-form");
   const applyButton = document.querySelector(".js-apply");
   const showFormButton = document.querySelector(".js-show-form");
-  const showFormButtonWrapper = document.querySelector(".js-show-form-wrapper");
   const alert = document.querySelector(".js-alert");
   const formFields = form.elements;
   var canSend = true;
@@ -29,7 +28,7 @@ export function emailApplication() {
     var hideButtonAnime = anime({
       easing: "easeOutCubic",
       duration: 1000,
-      targets: showFormButtonWrapper,
+      targets: showFormButton.parentNode,
       opacity: [1, 0],
       height: 0,
       complete() {
