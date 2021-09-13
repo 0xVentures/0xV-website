@@ -1,19 +1,31 @@
 //
 
+.form-wrapper {
+  height: 0;
+  overflow: hidden;
+}
+
 .contact-form {
   @include border-radius;
   max-width: $line-length;
-  margin-top: $space-2;
   padding: $space-1;
   background-color: color.change($background-primary, $alpha: 0.60);
   @include tablet-up {
-    padding: $space-1 $space-2 $space-2;
+    padding: $space-2 $space-2;
   }
 }
 
-.form--section {
-  margin-bottom: $space-1;
+.hidden {
+  display: none;
+}
 
+.contact-form--hidden {
+  display: none;
+}
+
+.form-section {
+  margin-bottom: $space-1;
+  overflow: hidden;
 }
 .form--label {
   @include body2;
@@ -61,7 +73,7 @@
   @include transition;
 
   padding: $space-05 $space-4 ;
-  margin-top: $space-1;
+
   background-color: $copper-light;
   color: $black-primary;
   border: 1px solid transparent;
@@ -74,8 +86,12 @@
   }
 
   &:hover {
-    border-color: $white-secondary;
+    border-color: $white-faded;
   }
+}
+
+.show-form-wrapper {
+  overflow: hidden;
 }
 
 .form-button--loading {

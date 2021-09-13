@@ -327,30 +327,35 @@
       <div class="content">
         <h2 class="title-large space-shadow">See the light</h2>
 
-        <p class="title2 space-shadow">
+        <p class="title2 space-shadow space-2">
           We are as strong as our combined forces. Our activity is written into
           blockchain, but you’ll never find us. The future may be unknown, but
           the opportunities for both us and our partners are limitless. Speak to
           us today about working together.
         </p>
 
-        <p class="title2 space-shadow">
-          Interested? Please fill out the form and we will get back to you
-          shortly. Every application is reviewed thoroughly. Thank&nbsp;you.
-        </p>
+        <div class="show-form-wrapper js-show-form-wrapper">
+          <button class="button form-button js-show-form" type="button">Contact us</button>
+        </div>
 
+        <div class="form-wrapper js-form-wrapper">
         <form
           action="javascript:void(0);"
           method="get"
-          class="contact-form js-contact-form"
+          class="contact-form contact-form--hidden js-contact-form"
           id="contactForm"
         >
-          <div class="form--section">
+          <p class="body1 form-section">
+            Interested? Please fill out the form and we will get back to you
+            shortly. Every application is reviewed thoroughly. Thank&nbsp;you.
+          </p>
+
+          <div class="form-section">
             <label class="form--label" for="email">Your Email</label>
             <input class="form-input" type="email" name="email" id="email" />
           </div>
 
-          <div class="form--section">
+          <div class="form-section">
             <label class="form--label" for="projectName">Project Name</label>
             <input
               class="form-input"
@@ -360,17 +365,17 @@
             />
           </div>
 
-          <div class="form--section">
+          <div class="form-section">
             <label class="form--label" for="website">Project Website</label>
             <input class="form-input" type="text" name="website" id="website" />
           </div>
 
-          <div class="form--section">
+          <div class="form-section">
             <label class="form--label" for="twitter">Project Twitter</label>
             <input class="form-input" type="text" name="twitter" id="twitter" />
           </div>
 
-          <div class="form--section">
+          <div class="form-section">
             <label class="form--label" for="nameContact">Name of Contact</label>
             <input
               class="form-input"
@@ -380,7 +385,7 @@
             />
           </div>
 
-          <div class="form--section">
+          <div class="form-section">
             <label class="form--label" for="contactPosition"
               >Contact's Position in Project</label
             >
@@ -392,7 +397,7 @@
             />
           </div>
 
-          <div class="form--section">
+          <div class="form-section">
             <label class="form--label" for="description"
               >Description of Project</label
             >
@@ -403,10 +408,12 @@
             ></textarea>
           </div>
 
-
-          <button class="button form-button js-apply">Apply Now</button>
-          <div class="form-alert js-alert"></div>
+          <div class="form--section">
+            <button class="button form-button js-apply">Apply Now</button>
+            <div class="form-alert js-alert"></div>
+          </div>
         </form>
+        </div>
       </div>
     </section>
 

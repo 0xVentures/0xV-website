@@ -1,14 +1,76 @@
+import anime, { timeline } from "animejs";
+
 export function sendApplication() {
+  const formWrapper = document.querySelector(".form-wrapper");
   const form = document.querySelector(".js-contact-form");
-  const button = document.querySelector(".js-apply");
+  const applyButton = document.querySelector(".js-apply");
+  const showFormButton = document.querySelector(".js-show-form");
+  const showFormButtonWrapper = document.querySelector(".js-show-form-wrapper");
   const alert = document.querySelector(".js-alert");
   const formFields = form.elements;
   var canSend = true;
+  var formIsOpen = false;
   var validate = require("validate.js");
 
-  button.addEventListener("click", (event) => {
+  applyButton.addEventListener("click", (event) => {
     resolveClick(event);
   });
+
+  showFormButton.addEventListener("click", (event) => {
+    showForm(event);
+  });
+
+  function showForm() {
+    if (formIsOpen) {
+      return;
+    }
+
+
+    var hideButtonAnime = anime({
+      easing: "easeOutCubic",
+      duration: 1000,
+      targets: showFormButtonWrapper,
+      opacity: [1, 0],
+      height: 0,
+      complete() {
+        formIsOpen = true;
+        showFormButton.classList.add("hidden");
+        form["email"].focus();
+      },
+    });
+
+    var showFormAnime = anime.timeline({
+      easing: "easeInCubic",
+      duration: 600,
+    });
+
+    form.classList.remove("contact-form--hidden");
+
+    showFormAnime
+      .add({
+        targets: formWrapper,
+        height: form.clientHeight,
+        complete() {
+          formWrapper.style.height = "auto";
+        },
+      })
+      .add(
+        {
+          targets: form,
+          opacity: [0, 1],
+        },
+        0
+      )
+      .add(
+        {
+          targets: form.querySelectorAll(".form-section"),
+          opacity: [0, 1],
+          duration: 800,
+          delay: anime.stagger(100),
+        },
+        0
+      );
+  }
 
   function resolveClick(event) {
     var checkOk = checkForm();
@@ -36,7 +98,7 @@ export function sendApplication() {
 
     // stop button
     canSend = false;
-    button.classList.add("form-button--loading");
+    applyButton.classList.add("form-button--loading");
 
     emailjs.send("default_service", "template_nrbw9wi", templateParams).then(
       function (response) {
@@ -44,12 +106,12 @@ export function sendApplication() {
         alert.innerHTML = "Thank you. Your application is on its way.";
         alert.classList.remove("form-alert--wrong");
         alert.classList.add("form-alert--thanks", "form-alert--visible");
-        button.classList.add("form-button--done");
+        applyButton.classList.add("form-button--done");
       },
       function (error) {
         console.log("FAILED...", error);
         canSend = true;
-        button.classList.remove("form-button--loading");
+        applyButton.classList.remove("form-button--loading");
       }
     );
   }
