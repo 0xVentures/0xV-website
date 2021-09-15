@@ -179,7 +179,7 @@ var animationsxV = (function () {
         targets: paragraphs,
         opacity: [0, 1],
         duration: 1200,
-        delay: anime.stagger(1200),
+        delay: anime.stagger(1000),
         complete() {
           // open nav
           navAnimation();
@@ -220,7 +220,7 @@ var animationsxV = (function () {
           duration: 800,
           delay: anime.stagger(400),
         },
-        400
+        "+=400"
       )
       .add(
         {
@@ -229,6 +229,7 @@ var animationsxV = (function () {
           duration: 800,
           delay: anime.stagger(40),
         },
+        "+=400"
       );
   }
 
