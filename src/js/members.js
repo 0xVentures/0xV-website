@@ -63,6 +63,7 @@ const members = new Map([
   ["0x_luc", "0xLuc"],
   ["thorchain_newby", "Thorchain.Newbie"],
   ["MangoPeaches23", "MangoPeaches"],
+  ["opusfides", "Opus"],
 ]);
 
 export default members;
