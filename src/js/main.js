@@ -159,7 +159,6 @@ var animationsxV = (function () {
     );
     const headerWords = header.querySelectorAll(".word");
 
-
     section.style.display = "";
     section.style.opacity = "";
 
@@ -175,16 +174,19 @@ var animationsxV = (function () {
         duration: 1200,
         delay: anime.stagger(400),
       })
-      .add({
-        targets: paragraphs,
-        opacity: [0, 1],
-        duration: 1200,
-        delay: anime.stagger(1000),
-        complete() {
-          // open nav
-          navAnimation();
+      .add(
+        {
+          targets: paragraphs,
+          opacity: [0, 1],
+          duration: 1200,
+          delay: anime.stagger(1000),
+          complete() {
+            // open nav
+            navAnimation();
+          },
         },
-      });
+        "-=400"
+      );
   }
 
   function showSection(sectionId) {
@@ -220,7 +222,7 @@ var animationsxV = (function () {
           duration: 800,
           delay: anime.stagger(400),
         },
-        "+=400"
+        "-=400"
       )
       .add(
         {
@@ -229,7 +231,7 @@ var animationsxV = (function () {
           duration: 800,
           delay: anime.stagger(40),
         },
-        "+=400"
+        "-=400"
       );
   }
 
