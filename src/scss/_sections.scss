@@ -80,6 +80,9 @@
 }
 
 .content--partners {
+  width: $line-length * 1.5;
+  max-width: 100%;
+
   padding: 0 $space-1 $space-8;
   @include laptop-up {
     padding: 0 $space-4 $space-8;
@@ -128,12 +131,23 @@
 .partner-logos {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.partner-logos::after {
+  content: "";
+  flex: auto;
 }
 
 .parner-logos__a {
   flex: 1 1 100%;
   @include tablet-up {
     flex: 1 1 50%;
+    max-width: 50%;
+  }
+  @include laptop-up {
+    flex: 1 1 33.33%;
+    max-width: 33.33%;
   }
 }
 
