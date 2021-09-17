@@ -15,6 +15,7 @@ const members = new Map([
   ["howefai", "howefai"],
   ["_realcosmos", "AIRTX"],
   ["opaopaque", "Opaque"],
+  ["pietrekt_", "pietrekt"],
   ["warlockofmirth", "MoDee227"],
   ["thorlunatic", "shaye"],
   ["hoodlum1349", "Hoodlum"],
