@@ -139,7 +139,7 @@
   flex: auto;
 }
 
-.parner-logos__a {
+.partner-logos__a {
   flex: 1 1 100%;
   @include tablet-up {
     flex: 1 1 50%;
@@ -151,13 +151,13 @@
   }
 }
 
-.parner-logos__item {
+.partner-logos__item {
   height: $space-2;
   width: auto;
   margin-top: $space-2;
 }
 
-.parner-logos__item--heigh {
+.partner-logos__item--heigh {
   height: $space-2 + $space-05;
 }
 
