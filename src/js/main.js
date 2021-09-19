@@ -1,7 +1,8 @@
 import anime from "animejs";
 import helpers from "./helpers.js";
-import getProfiles from "./twitter.js";
 import { emailApplication } from "./email.js";
+import members from "./members.js";
+import partners from "./partners.js";
 
 var animationsxV = (function () {
   const video = document.querySelector(".back-video");
@@ -29,6 +30,7 @@ var animationsxV = (function () {
     // contentGradient.style.opacity = "0";
 
     addProfileImages();
+    addPartners();
     playIntroAnimation();
 
     emailApplication();
@@ -235,14 +237,13 @@ var animationsxV = (function () {
       );
   }
 
-  async function addProfileImages() {
+  function addProfileImages() {
     const membersWrapper = document.querySelector(".js-members");
-    const membersImages = await getProfiles();
     var membersInner = document.createElement("div");
     membersInner.classList.add("members-inner");
 
     var memberNodes = [];
-    membersImages.forEach((memberTwitter, memberName) => {
+    members.forEach((memberName, memberTwitter) => {
       var a = document.createElement("a");
       a.classList.add("member");
       a.href = "https://twitter.com/" + memberTwitter;
@@ -275,6 +276,36 @@ var animationsxV = (function () {
     });
 
     membersWrapper.appendChild(membersInner);
+  }
+
+  function addPartners() {
+    const partnersWrapper = document.querySelector(".js-partners");
+    var partnersInner = document.createElement("div");
+    partnersInner.classList.add("partner-logos");
+
+    var partnerNodes = [];
+    partners.forEach((data, partner) => {
+      console.log(partner);
+      console.log(data);
+      console.log("------");
+      var a = document.createElement("a");
+      a.href = data.href;
+      a.target = "_blank";
+      a.classList.add("partner-logos__a", "js-section-element");
+
+      var img = document.createElement("img");
+      img.src = data.src;
+      img.alt = partner;
+      img.classList.add("partner-logos__item");
+      if (data.imgClass && data.imgClass !== "") {
+        img.classList.add(data.imgClass);
+      }
+
+      a.appendChild(img);
+      partnersInner.appendChild(a);
+    });
+
+    partnersWrapper.appendChild(partnersInner);
   }
 
   function resolveTopNavClick(event) {
