@@ -183,8 +183,8 @@ var animationsxV = (function () {
   }
 
   // Todo
-  // get intersecting elements as array/nodelist
-  // stagger them
+  // better staggering
+
   function showElement(el, delay) {
     if (!el) {
       return;
@@ -207,19 +207,9 @@ var animationsxV = (function () {
         {
           targets: el,
           opacity: [0, 1],
-          duration: 1000,
+          duration: 800,
           delay: delay,
           easing: "easeOutSine",
-        },
-        0
-      )
-      .add(
-        {
-          targets: el,
-          duration: 200,
-          translateX: [-40, 0],
-          delay: delay,
-          easing: "easeOutQuart",
         },
         0
       );
