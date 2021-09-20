@@ -6,35 +6,50 @@ import partners from "./partners.js";
 
 var animationsxV = (function () {
   const video = document.querySelector(".back-video");
-  var elementsToShow = document.querySelectorAll('.js-show-el');
+  var elementsToShow = document.querySelectorAll(".js-show-el");
   const ventures = document.querySelector("#ventures");
-  const navButtons = document.querySelectorAll(".js-nav-btn");
   const navWrapper = document.querySelector(".js-side-nav-wrapper");
   const navTop = document.querySelector(".js-top-nav");
   const navGradient = document.querySelector(".js-side-nav-gradient");
-  const contentGradient = document.querySelector(".js-content-gradient");
   var isLoading = true;
   var navIsOpen = false;
   var openSections = [];
   // check if nav is displayed
   // if not, do not animate it
-  const navIsVisible =
-    window.getComputedStyle(document.querySelector(".js-side-nav-wrapper"))
-      .display !== "none";
+  function navIsVisible() {
+    const r = window.getComputedStyle(navWrapper).display !== "none";
+    console.log('navIsVisible: ' + r);
+    return r;
+  }
 
-  var init = (function () {
-    // test
+  window.onload = function () {
+    init();
+  };
+
+  var init = function () {
     ventures.style.opacity = "0";
 
+    navWrapper.addEventListener("click", (event) => {
+      resolveNavClick(event);
+      if (video.paused) {
+        video.play();
+      }
+    });
 
-    hideSideNav();
-    // contentGradient.style.opacity = "0";
+    navTop.addEventListener("click", (event) => {
+      resolveTopNavClick(event);
+    });
 
     addProfileImages();
     addPartners();
     playIntroAnimation();
-
     emailApplication();
+
+    hideSideNav();
+
+    if (window.pageYOffset > 100) {
+      navAnimation();
+    }
 
     elementsToShow = document.querySelectorAll(".js-show-el");
 
@@ -52,7 +67,7 @@ var animationsxV = (function () {
     [...elementsToShow].forEach((el) => {
       observer.observe(el);
     });
-  })();
+  };
 
   function observerOnChange(changes, observer) {
     changes.forEach((change) => {
@@ -64,44 +79,11 @@ var animationsxV = (function () {
   }
 
   function hideSideNav() {
-    if (navIsVisible) {
+    if (navIsVisible()) {
       navWrapper.style.display = "none";
       navGradient.style.opacity = "0";
     }
   }
-
-  // add listeners
-  // video.addEventListener("canplay", (event) => {
-  //   addProfileImages();
-  //   playIntroAnimation();
-  // });
-
-  // video.addEventListener("error", () => {
-  //   addProfileImages();
-  //   playIntroAnimation();
-  //   console.log('video error');
-  // });
-
-  // video.addEventListener("abort", () => {
-  //   addProfileImages();
-  //   playIntroAnimation();
-  //   console.log('video abort');
-  // });
-
-  // video.onerror = function () {
-  //   console.log("video error");
-  // };
-
-  navWrapper.addEventListener("click", (event) => {
-    resolveNavClick(event);
-    if (video.paused) {
-      video.play();
-    }
-  });
-
-  navTop.addEventListener("click", (event) => {
-    resolveTopNavClick(event);
-  });
 
   function playIntroAnimation() {
     if (isLoading === false) {
@@ -123,35 +105,6 @@ var animationsxV = (function () {
         showFirstSection();
       },
     });
-  }
-
-  function navAnimation() {
-    if (!navIsVisible) {
-      return;
-    }
-    navWrapper.style.display = "";
-
-    var timeline = anime.timeline({
-      easing: "easeInSine",
-      duration: 800,
-    });
-
-    timeline
-      .add(
-        {
-          targets: navWrapper,
-          opacity: [0, 1],
-        },
-        0
-      )
-      .add(
-        {
-          targets: navGradient,
-          opacity: [0, 1],
-          duration: 1600,
-        },
-        0
-      );
   }
 
   function showFirstSection() {
@@ -194,6 +147,35 @@ var animationsxV = (function () {
       );
   }
 
+  function navAnimation() {
+    if (navIsVisible()) {
+      return;
+    }
+    navWrapper.style.display = "";
+
+    var timeline = anime.timeline({
+      easing: "easeInSine",
+      duration: 800,
+    });
+
+    timeline
+      .add(
+        {
+          targets: navWrapper,
+          opacity: [0, 1],
+        },
+        0
+      )
+      .add(
+        {
+          targets: navGradient,
+          opacity: [0, 1],
+          duration: 1600,
+        },
+        0
+      );
+  }
+
   function showElement(el) {
     if (!el) {
       return;
@@ -206,16 +188,14 @@ var animationsxV = (function () {
     el.style.display = "";
     el.style.opacity = "";
 
-        anime({
-          targets: el,
-          opacity: [0, 1],
-          duration: 600,
-          easing: "easeInSine",
-          complete() {
-          },
-        });
+    anime({
+      targets: el,
+      opacity: [0, 1],
+      duration: 600,
+      easing: "easeInSine",
+      complete() {},
+    });
   }
-
 
   function addProfileImages() {
     const membersWrapper = document.querySelector(".js-members");
@@ -265,9 +245,6 @@ var animationsxV = (function () {
 
     var partnerNodes = [];
     partners.forEach((data, partner) => {
-      // console.log(partner);
-      // console.log(data);
-      // console.log("------");
       var a = document.createElement("a");
       a.href = data.href;
       a.target = "_blank";
