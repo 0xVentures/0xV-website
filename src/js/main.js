@@ -198,8 +198,8 @@ var animationsxV = (function () {
     el.style.opacity = "";
 
     var timeline = anime.timeline({
-      easing: "easeInSine",
-      duration: 800,
+      easing: "easeOutSine",
+      duration: 1000,
     });
 
     timeline
@@ -207,7 +207,7 @@ var animationsxV = (function () {
         {
           targets: el,
           opacity: [0, 1],
-          duration: 800,
+          duration: 1000,
           delay: delay,
           easing: "easeOutSine",
         },
