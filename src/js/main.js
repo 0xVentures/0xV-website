@@ -18,7 +18,7 @@ var animationsxV = (function () {
   // if not, do not animate it
   function navIsVisible() {
     const r = window.getComputedStyle(navWrapper).display !== "none";
-    console.log('navIsVisible: ' + r);
+    // console.log('navIsVisible: ' + r);
     return r;
   }
 
@@ -266,14 +266,14 @@ var animationsxV = (function () {
   }
 
   function resolveTopNavClick(event) {
-    console.log(event.target);
+    // console.log(event.target);
     if (event.target && event.target.classList.contains("nav-btn--menu")) {
       toggleSideNav();
     }
   }
 
   function resolveNavClick(event) {
-    console.log(event.target);
+    // console.log(event.target);
     toggleSideNav();
   }
 
