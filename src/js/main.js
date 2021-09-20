@@ -11,9 +11,11 @@ var animationsxV = (function () {
   const navWrapper = document.querySelector(".js-side-nav-wrapper");
   const navTop = document.querySelector(".js-top-nav");
   const navGradient = document.querySelector(".js-side-nav-gradient");
+  const elementsToShowDelay = 100;
   var isLoading = true;
   var navIsOpen = false;
   var openSections = [];
+
   // check if nav is displayed
   // if not, do not animate it
   function navIsVisible() {
@@ -42,7 +44,6 @@ var animationsxV = (function () {
 
     addProfileImages();
     addPartners();
-    playIntroAnimation();
     emailApplication();
 
     hideSideNav();
@@ -50,6 +51,8 @@ var animationsxV = (function () {
     if (window.pageYOffset > 100) {
       navAnimation();
     }
+
+    playIntroAnimation();
 
     elementsToShow = document.querySelectorAll(".js-show-el");
 
@@ -61,7 +64,7 @@ var animationsxV = (function () {
     }
 
     var observer = new IntersectionObserver(observerOnChange, {
-      threshold: [1.0],
+      threshold: 1,
     });
 
     [...elementsToShow].forEach((el) => {
@@ -70,10 +73,13 @@ var animationsxV = (function () {
   };
 
   function observerOnChange(changes, observer) {
+    var itemLoad = 0;
+
     changes.forEach((change) => {
       if (change.intersectionRatio > 0) {
         observer.unobserve(change.target);
-        showElement(change.target);
+        showElement(change.target, itemLoad * elementsToShowDelay);
+        itemLoad++;
       }
     });
   }
@@ -169,14 +175,17 @@ var animationsxV = (function () {
       .add(
         {
           targets: navGradient,
-          opacity: [0, 1],
+          opacity: 1,
           duration: 1600,
         },
         0
       );
   }
 
-  function showElement(el) {
+  // Todo
+  // get intersecting elements as array/nodelist
+  // stagger them
+  function showElement(el, delay) {
     if (!el) {
       return;
     }
@@ -188,13 +197,32 @@ var animationsxV = (function () {
     el.style.display = "";
     el.style.opacity = "";
 
-    anime({
-      targets: el,
-      opacity: [0, 1],
-      duration: 600,
+    var timeline = anime.timeline({
       easing: "easeInSine",
-      complete() {},
+      duration: 800,
     });
+
+    timeline
+      .add(
+        {
+          targets: el,
+          opacity: [0, 1],
+          duration: 1000,
+          delay: delay,
+          easing: "easeOutSine",
+        },
+        0
+      )
+      .add(
+        {
+          targets: el,
+          duration: 200,
+          translateX: [-40, 0],
+          delay: delay,
+          easing: "easeOutQuart",
+        },
+        0
+      );
   }
 
   function addProfileImages() {
@@ -278,7 +306,10 @@ var animationsxV = (function () {
   }
 
   function toggleSideNav() {
-    if (navIsVisible) {
+    console.log(navIsVisible());
+    console.log(!navIsOpen);
+    console.log(navIsVisible() && !navIsOpen);
+    if (navIsVisible() && !navIsOpen) {
       return;
     }
 
