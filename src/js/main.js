@@ -6,7 +6,7 @@ import partners from "./partners.js";
 
 var animationsxV = (function () {
   const video = document.querySelector(".back-video");
-  const sections = document.querySelectorAll(".js-section");
+  var elementsToShow = document.querySelectorAll('.js-show-el');
   const ventures = document.querySelector("#ventures");
   const navButtons = document.querySelectorAll(".js-nav-btn");
   const navWrapper = document.querySelector(".js-side-nav-wrapper");
@@ -26,6 +26,7 @@ var animationsxV = (function () {
     // test
     ventures.style.opacity = "0";
 
+
     hideSideNav();
     // contentGradient.style.opacity = "0";
 
@@ -35,10 +36,12 @@ var animationsxV = (function () {
 
     emailApplication();
 
+    elementsToShow = document.querySelectorAll(".js-show-el");
+
     // hide sections
     if ("IntersectionObserver" in window) {
-      sections.forEach((section) => {
-        section.style.opacity = "0.01";
+      elementsToShow.forEach((el) => {
+        el.style.opacity = "0.01";
       });
     }
 
@@ -46,8 +49,8 @@ var animationsxV = (function () {
       threshold: [1.0],
     });
 
-    [...sections].forEach((section) => {
-      observer.observe(section.querySelector("h2"));
+    [...elementsToShow].forEach((el) => {
+      observer.observe(el);
     });
   })();
 
@@ -55,7 +58,7 @@ var animationsxV = (function () {
     changes.forEach((change) => {
       if (change.intersectionRatio > 0) {
         observer.unobserve(change.target);
-        showSection(change.target.dataset.xtarget);
+        showElement(change.target);
       }
     });
   }
@@ -191,51 +194,28 @@ var animationsxV = (function () {
       );
   }
 
-  function showSection(sectionId) {
-    if (!sectionId) {
+  function showElement(el) {
+    if (!el) {
       return;
     }
-    if (openSections.includes(sectionId)) {
+    if (openSections.includes(el)) {
       return;
     }
-    openSections.push(sectionId);
+    openSections.push(el);
 
-    const section = document.querySelector("#" + sectionId);
-    const header = section.querySelector("h2");
-    const paragraphs = section.querySelectorAll("p");
-    const elements = section.querySelectorAll(".js-section-element");
-    section.style.display = "";
-    section.style.opacity = "";
+    el.style.display = "";
+    el.style.opacity = "";
 
-    var timeline = anime.timeline({
-      easing: "easeInSine",
-    });
-
-    timeline
-      .add({
-        targets: header,
-        opacity: [0, 1],
-        duration: 1200,
-      })
-      .add(
-        {
-          targets: paragraphs,
+        anime({
+          targets: el,
           opacity: [0, 1],
-          duration: 800,
-          delay: anime.stagger(400),
-        },
-        "-=400"
-      )
-      .add(
-        {
-          targets: elements,
-          opacity: [0, 1],
-          duration: 800,
-          delay: anime.stagger(40),
-        },
-        "-=400"
-      );
+          duration: 600,
+          easing: "easeInSine",
+          complete() {
+          },
+        });
   }
+
 
   function addProfileImages() {
     const membersWrapper = document.querySelector(".js-members");
@@ -245,12 +225,12 @@ var animationsxV = (function () {
     var memberNodes = [];
     members.forEach((memberName, memberTwitter) => {
       var a = document.createElement("a");
-      a.classList.add("member");
+      a.classList.add("member", "js-show-el");
       a.href = "https://twitter.com/" + memberTwitter;
       a.target = "_blank";
 
       var wrapper = document.createElement("div");
-      wrapper.classList.add("member__data", "js-section-element");
+      wrapper.classList.add("member__data");
 
       var img = document.createElement("img");
       img.classList.add("member__img");
@@ -285,13 +265,13 @@ var animationsxV = (function () {
 
     var partnerNodes = [];
     partners.forEach((data, partner) => {
-      console.log(partner);
-      console.log(data);
-      console.log("------");
+      // console.log(partner);
+      // console.log(data);
+      // console.log("------");
       var a = document.createElement("a");
       a.href = data.href;
       a.target = "_blank";
-      a.classList.add("partner-logos__a", "js-section-element");
+      a.classList.add("partner-logos__a", "js-show-el");
 
       var img = document.createElement("img");
       img.src = data.src;
