@@ -113,6 +113,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
+  [
+    "Synchrony",
+    {
+      href: "synchrony.fi",
+      src: "assets/img/partners/partner_logo_synchrony.png",
+      imgClass: "",
+    },
+  ],
 ]);
 
 export default partners;
