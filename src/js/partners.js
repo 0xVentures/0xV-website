@@ -105,6 +105,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
+  [
+    "xdefi",
+    {
+      href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
+      src: "assets/img/partners/partner_logo_xdefi.png",
+      imgClass: "",
+    },
+  ],
 ]);
 
 export default partners;
