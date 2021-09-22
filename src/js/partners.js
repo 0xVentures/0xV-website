@@ -116,8 +116,16 @@ const partners = new Map([
   [
     "Synchrony",
     {
-      href: "synchrony.fi",
+      href: "https://synchrony.fi",
       src: "assets/img/partners/partner_logo_synchrony.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "White Whale",
+    {
+      href: "https://whitewhale.finance/",
+      src: "assets/img/partners/partner_logo_white_whale.png",
       imgClass: "",
     },
   ],
