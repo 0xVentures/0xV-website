@@ -25,6 +25,14 @@ const partners = new Map([
     },
   ],
   [
+    "Thorchads",
+    {
+      href: "https://thorchads.com/",
+      src: "assets/img/partners/partner_logo_thorchads.png",
+      imgClass: "",
+    },
+  ],
+  [
     "LP University",
     {
       href: "https://liquidityprovider.university/",
@@ -126,6 +134,14 @@ const partners = new Map([
     {
       href: "https://whitewhale.finance/",
       src: "assets/img/partners/partner_logo_white_whale.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "Levana",
+    {
+      href: "https://levana.finance",
+      src: "assets/img/partners/partner_logo_levana.png",
       imgClass: "",
     },
   ],
