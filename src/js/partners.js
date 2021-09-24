@@ -64,30 +64,6 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-  [
-    "Infinity Skies",
-    {
-      href: "https://infinityskies.io/",
-      src: "assets/img/partners/partner_logo_infinityskies.png",
-      imgClass: "partner-logos__item--heigh",
-    },
-  ],
-  [
-    "BNPL",
-    {
-      href: "https://bnplpay.io/",
-      src: "assets/img/partners/partner_logo_bnpl.png",
-      imgClass: "partner-logos__item--heigh",
-    },
-  ],
-  [
-    "Shroomies",
-    {
-      href: "https://twitter.com/shroomiesNFT",
-      src: "assets/img/partners/partner_logo_shroomies.png",
-      imgClass: "",
-    },
-  ],
 
   [
     "Algomint",
@@ -113,14 +89,7 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-  [
-    "xdefi",
-    {
-      href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
-      src: "assets/img/partners/partner_logo_xdefi.png",
-      imgClass: "",
-    },
-  ],
+
   [
     "Synchrony",
     {
@@ -142,6 +111,55 @@ const partners = new Map([
     {
       href: "https://levana.finance",
       src: "assets/img/partners/partner_logo_levana.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "Pollen",
+    {
+      href: "https://pollen.id/",
+      src: "assets/img/partners/partner_logo_pollen.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "Ratio",
+    {
+      href: "https://ratio.finance/",
+      src: "assets/img/partners/partner_logo_ratio.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "xdefi",
+    {
+      href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
+      src: "assets/img/partners/partner_logo_xdefi.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "BNPL",
+    {
+      href: "https://bnplpay.io/",
+      src: "assets/img/partners/partner_logo_bnpl.png",
+      imgClass: "partner-logos__item--heigh",
+    },
+  ],
+
+  [
+    "Infinity Skies",
+    {
+      href: "https://infinityskies.io/",
+      src: "assets/img/partners/partner_logo_infinityskies.png",
+      imgClass: "partner-logos__item--heigh",
+    },
+  ],
+  [
+    "Shroomies",
+    {
+      href: "https://twitter.com/shroomiesNFT",
+      src: "assets/img/partners/partner_logo_shroomies.png",
       imgClass: "",
     },
   ],
