@@ -123,10 +123,34 @@ const partners = new Map([
     },
   ],
   [
+    "Valkyrie",
+    {
+      href: "https://valkyrieprotocol.com/",
+      src: "assets/img/partners/partner_logo_valkyrie.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "The Boring Protocol",
+    {
+      href: "https://boringprotocol.io/",
+      src: "assets/img/partners/partner_logo_boring.png",
+      imgClass: "",
+    },
+  ],
+  [
     "Ratio",
     {
       href: "https://ratio.finance/",
       src: "assets/img/partners/partner_logo_ratio.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "Ratio",
+    {
+      href: "https://ratio.finance/",
+      src: "assets/img/partners/partner_logo_ratio_2.png",
       imgClass: "",
     },
   ],
