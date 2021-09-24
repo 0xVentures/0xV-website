@@ -147,14 +147,6 @@ const partners = new Map([
     },
   ],
   [
-    "Ratio",
-    {
-      href: "https://ratio.finance/",
-      src: "assets/img/partners/partner_logo_ratio_2.png",
-      imgClass: "",
-    },
-  ],
-  [
     "xdefi",
     {
       href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
