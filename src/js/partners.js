@@ -115,6 +115,14 @@ const partners = new Map([
     },
   ],
   [
+    "Symmetry",
+    {
+      href: "https://symmetry.fi/",
+      src: "assets/img/partners/partner_logo_symmetry.png",
+      imgClass: "",
+    },
+  ],
+  [
     "Pollen",
     {
       href: "https://pollen.id/",
@@ -160,6 +168,14 @@ const partners = new Map([
       href: "https://bnplpay.io/",
       src: "assets/img/partners/partner_logo_bnpl.png",
       imgClass: "partner-logos__item--heigh",
+    },
+  ],
+  [
+    "Phantasia",
+    {
+      href: "https://www.phantasia.digital/",
+      src: "assets/img/partners/partner_logo_phantasia.png",
+      imgClass: "",
     },
   ],
 
