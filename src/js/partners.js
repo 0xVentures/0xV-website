@@ -195,6 +195,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
+  [
+    "ASM",
+    {
+      href: "https://www.alteredstatemachine.xyz",
+      src: "assets/img/partners/partner_logo_asm.png",
+      imgClass: "",
+    },
+  ],
 ]);
 
 export default partners;
