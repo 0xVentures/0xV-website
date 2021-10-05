@@ -74,6 +74,14 @@ const partners = new Map([
     },
   ],
   [
+    "Algopulse",
+    {
+      href: "https://www.algopulse.io/",
+      src: "assets/img/partners/partner_logo_algopulse.png",
+      imgClass: "",
+    },
+  ],
+  [
     "Slope",
     {
       href: "https://slope.finance/",
@@ -200,6 +208,14 @@ const partners = new Map([
     {
       href: "https://www.alteredstatemachine.xyz",
       src: "assets/img/partners/partner_logo_asm.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "Lunaverse",
+    {
+      href: "https://lunaverse.io/",
+      src: "assets/img/partners/partner_logo_lunaverse.png",
       imgClass: "",
     },
   ],
