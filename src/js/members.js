@@ -55,7 +55,6 @@ const members = new Map([
   ["grabnarsergej", "sergo"],
   ["jatinkkalra", "Jatin Kalra"],
   ["keith_0x", "Runeingman"],
-  ["0xPluto", "Pluto"],
   ["TamerOvutmen", "Tamer"],
   ["wagmi42069", "wagmi"],
   ["TheTickrate", "Tickrate"],
