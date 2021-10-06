@@ -219,6 +219,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
+  [
+    "Metaprime",
+    {
+      href: "https://metaprime.network/",
+      src: "assets/img/partners/partner_logo_metaprime.png",
+      imgClass: "",
+    },
+  ],
 ]);
 
 export default partners;
