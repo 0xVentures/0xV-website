@@ -226,3 +226,19 @@
 }
 .member:hover .member__name, .member__name:hover {
 }
+
+
+// links
+// mostly reuse memebers
+.social-icon {
+  width: $space-1 + $space-05;
+  height: $space-1 + $space-05;
+  display: inline-block;
+  margin-right: $space-1;
+  opacity: $opacity-faded;
+  filter: #{"invert(1)"};
+}
+
+.member:hover .social-icon {
+    opacity: $opacity-primary;
+  }

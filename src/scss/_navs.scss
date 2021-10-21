@@ -161,20 +161,5 @@
   opacity: 1;
 }
 
-.social-icons {
-  padding: 2rem 1rem;
-}
 
-.social-icon {
-  width: $space-2;
-  height: $space-1;
-  display: inline-block;
-  padding-right: $space-1;
-  opacity: $opacity-faded;
-  filter: #{"invert(1)"};
-
-  &:hover {
-    opacity: $opacity-primary;
-  }
-}
 
