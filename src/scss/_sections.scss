@@ -39,7 +39,6 @@
   position: relative;
   min-width: 100%;
 
-
   @include laptop-up {
     display: flex;
     flex-flow: column nowrap;
@@ -124,7 +123,6 @@
   animation-direction: normal;
   animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-
 
 // partners
 
@@ -224,21 +222,130 @@
     @include body2;
   }
 }
-.member:hover .member__name, .member__name:hover {
+.member:hover .member__name,
+.member__name:hover {
 }
-
 
 // links
 // mostly reuse memebers
+
+.socials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.socials::after {
+  content: "";
+  flex: auto;
+}
+
+.social-link {
+  padding: 0 $space-1 $space-2 0;
+  display: flex;
+  flex: 1 1 100%;
+  color: $white-primary;
+  text-decoration: none;
+  width: 100%;
+
+  @include desktop-up {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
+
+.social-link__data {
+  width: 100%;
+  @include border-radius;
+  background-color: color.change($background-primary, $alpha: 0.38);
+  padding: $space-05 $space-1;
+  &:hover {
+    background-color: color.change($background-primary, $alpha: 0.87);
+  }
+}
+
+.social-link__a {
+  color: $white-primary;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 0 $space-1;
+  text-decoration-color: $white-faded;
+
+  &:hover {
+    text-decoration-color: $white-primary;
+  }
+}
+
 .social-icon {
-  width: $space-1 + $space-05;
-  height: $space-1 + $space-05;
-  display: inline-block;
-  margin-right: $space-1;
-  opacity: $opacity-faded;
+  width: $space-1;
+  height: $space-1;
+  display: block;
+  margin-right: $space-05;
   filter: #{"invert(1)"};
 }
 
-.member:hover .social-icon {
-    opacity: $opacity-primary;
+.social-link__title {
+  margin: 0;
+}
+
+.social-link__media {
+  max-width: 100%;
+  height: auto;
+}
+
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {
+  height: auto;
+}
+@supports (--custom: property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
   }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+.twitter-timeline {
+  @include border-radius;
+  background-color: color.change($background-primary, $alpha: 0.87);
+}
+
+#medium-widget .medium-widget-article__title {
+  color: $white-primary;
+  @include title2;
+}
+#medium-widget .medium-widget-article__description,
+#medium-widget .medium-widget-article__author-name,
+#medium-widget .medium-widget-article__date,
+#medium-widget .medium-widget-article__clap {
+  color: $white-secondary;
+  @include body2;
+}
+#medium-widget .medium-widget-article__info {
+  margin-top: $space-05;
+}
+#medium-widget .medium-widget-article__row {
+  margin: 0;
+}
+#medium-widget .medium-widget-article__item {
+  padding: 0;
+}
+#medium-widget .medium-widget-article__clap::before{
+  filter: #{"invert(1)"};
+}
+
+.discord-widget {
+  max-width: 100%;
+}

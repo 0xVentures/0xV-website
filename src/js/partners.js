@@ -131,14 +131,6 @@ const partners = new Map([
     },
   ],
   [
-    "Pollen",
-    {
-      href: "https://pollen.id/",
-      src: "assets/img/partners/partner_logo_pollen.png",
-      imgClass: "",
-    },
-  ],
-  [
     "Valkyrie",
     {
       href: "https://valkyrieprotocol.com/",
