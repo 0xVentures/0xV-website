@@ -204,6 +204,14 @@ const partners = new Map([
     },
   ],
   [
+    "Subsquid",
+    {
+      href: "https://www.subsquid.io/",
+      src: "assets/img/partners/partner_logo_subsquid.png",
+      imgClass: "",
+    },
+  ],
+  [
     "Lunaverse",
     {
       href: "https://lunaverse.io/",
