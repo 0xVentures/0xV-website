@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css?v1.5.0" />
+    <link rel="stylesheet" href="assets/css/styles.css?v1.6.0" />
 
     <link href="https://0xventures.org/" rel="canonical" />
 
@@ -240,7 +240,10 @@
         <div class="socials">
           <div class="social-link js-show-el">
             <div class="social-link__data">
-              <a class="social-link__a" target="_blank" href="https://www.youtube.com/channel/UC3QUmtn-7g72n3aVGO8gvuw"
+              <a
+                class="social-link__a"
+                target="_blank"
+                href="https://www.youtube.com/channel/UC3QUmtn-7g72n3aVGO8gvuw"
                 ><img
                   class="social-icon"
                   src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/youtube.svg"
@@ -265,7 +268,10 @@
           </div>
           <div class="social-link">
             <div class="social-link__data">
-              <a class="social-link__a" target="_blank" href="https://twitter.com/0x_Ventures"
+              <a
+                class="social-link__a"
+                target="_blank"
+                href="https://twitter.com/0x_Ventures"
                 ><img
                   class="social-icon"
                   src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/twitter.svg"
@@ -275,14 +281,28 @@
                 </h3></a
               >
               <div>
-                <a class="twitter-timeline" href="https://twitter.com/0x_Ventures?ref_src=twsrc%5Etfw" data-chrome="noheader nofooter noborders transparent" data-theme="dark" data-tweet-limit="1">Join us on Twitter</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a
+                  class="twitter-timeline"
+                  href="https://twitter.com/0x_Ventures?ref_src=twsrc%5Etfw"
+                  data-chrome="noheader nofooter noborders transparent"
+                  data-theme="dark"
+                  data-tweet-limit="1"
+                  >Join us on Twitter</a
+                >
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
               </div>
             </div>
           </div>
           <div class="social-link">
             <div class="social-link__data">
-              <a class="social-link__a" target="_blank" href="https://medium.com/@0xventures"
+              <a
+                class="social-link__a"
+                target="_blank"
+                href="https://medium.com/@0xventures"
                 ><img
                   class="social-icon"
                   src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/medium.svg"
@@ -294,13 +314,28 @@
               <div>
                 <div id="medium-widget"></div>
                 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-                <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@0xventures","postsPerLine":1,"limit":1,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+                <script>
+                  MediumWidget.Init({
+                    renderTo: "#medium-widget",
+                    params: {
+                      resource: "https://medium.com/@0xventures",
+                      postsPerLine: 1,
+                      limit: 1,
+                      picture: "big",
+                      fields: ["description", "author", "claps", "publishAt"],
+                      ratio: "landscape",
+                    },
+                  });
+                </script>
               </div>
             </div>
           </div>
           <div class="social-link">
             <div class="social-link__data">
-              <a class="social-link__a" target="_blank" href="https://discord.gg/pkKXCcSHyB"
+              <a
+                class="social-link__a"
+                target="_blank"
+                href="https://discord.gg/pkKXCcSHyB"
                 ><img
                   class="social-icon"
                   src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/discord.svg"
@@ -310,13 +345,24 @@
                 </h3></a
               >
               <div>
-                <iframe class="discord-widget" src="https://discord.com/widget?id=882199871761842259&theme=dark" width="900" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <iframe
+                  class="discord-widget"
+                  src="https://discord.com/widget?id=882199871761842259&theme=dark"
+                  width="900"
+                  height="350"
+                  allowtransparency="true"
+                  frameborder="0"
+                  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                ></iframe>
               </div>
             </div>
           </div>
           <div class="social-link">
             <div class="social-link__data">
-              <a class="social-link__a" target="_blank" href="https://t.me/joinchat/MUC3UHAsjrcyY2Y0"
+              <a
+                class="social-link__a"
+                target="_blank"
+                href="https://t.me/joinchat/MUC3UHAsjrcyY2Y0"
                 ><img
                   class="social-icon"
                   src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/telegram.svg"
@@ -329,8 +375,6 @@
           </div>
         </div>
       </div>
-
-
     </section>
 
     <section id="contact" class="section">
@@ -346,7 +390,10 @@
 
         <div class="show-form-wrapper -element js-show-el">
           <button class="button form-button js-show-form" type="button">
-            Contact us
+            Apply for funding
+          </button>
+          <button class="button form-button js-show-form-member" type="button">
+            Become a member
           </button>
         </div>
 
@@ -354,9 +401,12 @@
           <form
             action="javascript:void(0);"
             method="get"
-            class="contact-form contact-form--hidden js-contact-form"
-            id="contactForm"
+            class="contact-form js-funding-form"
+            id="fundingForm"
           >
+
+            <h2>Apply for funding</h2>
+
             <p class="body1 form-section">
               Interested? Please fill out the form and we will get back to you
               shortly. Every application is reviewed thoroughly. Thank&nbsp;you.
@@ -433,9 +483,621 @@
             </div>
 
             <div class="form-section">
-              <button class="button form-button js-apply">Apply Now</button>
+              <button class="button form-button js-apply-funding">Apply Now</button>
             </div>
+
+            <div class="">
+              <div class="form-alert js-alert"></div>
+            </div>
+          </form>
+
+          <form
+            action="javascript:void(0);"
+            method="get"
+            class="contact-form js-member-form"
+            id="fundingForm"
+          >
+
+            <h2>Become 0xVentures DAO member</h2>
+
+            <p class="body1 form-section">
+              We at 0xVentures are looking for additional Degens that focus on
+              the next up and coming projects with a high risk/return ratio and
+              are able to early identify highly innovative ideas in the
+              fast-moving DeFi sector.
+            </p>
+
+            <p class="body1 form-section">
+              Please provide as much as possible information based on the form
+              below so that we are able to evaluate your eligibility to become a
+              0xVentures DeFi Degen. All questions are optional so feel free to
+              provide only information to us that you feel comfortable with.
+            </p>
+
             <div class="form-section">
+              <label class="form--label" for="emailMember">Your Email</label>
+              <input
+                class="form-input"
+                type="email"
+                name="emailMember"
+                id="emailMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="twitterMember"
+                >URL to your Twitter profile</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="twitterMember"
+                id="twitterMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="telegramMember"
+                >Your Telegram handle</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="telegramMember"
+                id="telegramMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="discordMember"
+                >Your Discord handle (including #xxxx)</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="discordMember"
+                id="discordMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="sinceWhenMember"
+                >Since which year are you active in Crypto and DeFi?</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="sinceWhenMember"
+                id="sinceWhenMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="defiProtocolsMember"
+                >What are some of the DeFi protocols that you are mainly using?
+                Please focus on the ones where you have the highest portfolio
+                exposure.</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="defiProtocolsMember"
+                id="defiProtocolsMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <p class="form--label">
+                How much capital have you deployed in DeFi?
+              </p>
+              <label class="radio-group" for="capitalMember1"
+                ><input
+                  type="radio"
+                  name="capitalMember"
+                  id="capitalMember1"
+                  value="< $10.000"
+                />
+                <span>&lt; $10.000</span></label
+              >
+              <label class="radio-group" for="capitalMember2"
+                ><input
+                  type="radio"
+                  name="capitalMember"
+                  id="capitalMember2"
+                  value="$10.001 - $50.000"
+                />
+                <span>$10.001 - $50.000</span></label
+              >
+
+              <label class="radio-group" for="capitalMember3"
+                ><input
+                  type="radio"
+                  name="capitalMember"
+                  id="capitalMember3"
+                  value="$50.001 - $100.000"
+                />
+                <span>$50.001 - $100.000</span></label
+              >
+              <label class="radio-group" for="capitalMember4"
+                ><input
+                  type="radio"
+                  name="capitalMember"
+                  id="capitalMember4"
+                  value="$100.001 - $500.000"
+                />
+                <span>$100.001 - $500.000</span></label
+              >
+              <label class="radio-group" for="capitalMember5"
+                ><input
+                  type="radio"
+                  name="capitalMember"
+                  id="capitalMember5"
+                  value=">$1M"
+                />
+                <span>&gt;$1M</span></label
+              >
+            </div>
+
+            <div class="form-section">
+              <p class="form--label">
+                On which Blockchains (including Ethereum L2s) are you currently
+                farming?
+              </p>
+
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember1"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember1"
+                  value="Ethereum"
+                />
+                <span>Ethereum</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember2"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember2"
+                  value="Solana"
+                />
+                <span>Solana</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember3"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember3"
+                  value="Option 3"
+                />
+                <span>Option 3</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember4"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember4"
+                  value="Fantom"
+                />
+                <span>Fantom</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember5"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember5"
+                  value="Avalanche"
+                />
+                <span>Avalanche</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember6"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember6"
+                  value="Kava"
+                />
+                <span>Kava</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember7"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember7"
+                  value="Binance Smart Chain"
+                />
+                <span>Binance Smart Chain</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember8"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember8"
+                  value="Polygon"
+                />
+                <span>Polygon</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember9"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember9"
+                  value="Arbitrum"
+                />
+                <span>Arbitrum</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember10"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember10"
+                  value="Optimism"
+                />
+                <span>Optimism</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="farmingMember11"
+                ><input
+                  type="checkbox"
+                  name="farmingMember"
+                  id="farmingMember11"
+                  value="THORChain"
+                />
+                <span>THORChain</span></label
+              >
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="walletMember"
+                >What is the main wallet address you use for interacting with
+                DeFi Dapps? (We use this information to understand your
+                experience and history with DeFi)</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="walletMember"
+                id="walletMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <p class="form--label">
+                Which of the following types of assets do you have in your
+                portfolio? (Check all that apply).
+              </p>
+              <label
+                class="radio-group radio-group--checkbox"
+                for="assetsMember1"
+                ><input
+                  type="checkbox"
+                  name="assetsMember"
+                  id="assetsMember1"
+                  value="Reserves / Layer-1 Assets (BTC, ETH, WBTC, WETH, SOL, etc.)"
+                />
+                <span
+                  >Reserves / Layer-1 Assets (BTC, ETH, WBTC, WETH, SOL,
+                  etc.)</span
+                ></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="assetsMember2"
+                ><input
+                  type="checkbox"
+                  name="assetsMember"
+                  id="assetsMember2"
+                  value="Stablecoins"
+                />
+                <span>Stablecoins</span></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="assetsMember3"
+                ><input
+                  type="checkbox"
+                  name="assetsMember"
+                  id="assetsMember3"
+                  value="Yield Generating Assets (CRV, cDAI, cUSDT, etc.)"
+                />
+                <span
+                  >Yield Generating Assets (CRV, cDAI, cUSDT, etc.)</span
+                ></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="assetsMember4"
+                ><input
+                  type="checkbox"
+                  name="assetsMember"
+                  id="assetsMember4"
+                  value="None of the above"
+                />
+                <span>None of the above</span></label
+              >
+            </div>
+
+            <div class="form-section">
+              <p class="form--label">
+                Which of the following yield generating strategies do you have exposure to? (Check all that apply)
+              </p>
+              <label
+                class="radio-group radio-group--checkbox"
+                for="yieldMember1"
+                ><input
+                  type="checkbox"
+                  name="yieldMember"
+                  id="yieldMember1"
+                  value="Provide Liquidity to Lending Protocols"
+                />
+                <span>Provide Liquidity to Lending Protocols</span
+                ></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="yieldMember2"
+                ><input
+                  type="checkbox"
+                  name="yieldMember"
+                  id="yieldMember2"
+                  value="Provide Liquidity to DEX and Multi-Assets Pools"
+                />
+                <span>Provide Liquidity to DEX and Multi-Assets Pools</span
+                ></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="yieldMember3"
+                ><input
+                  type="checkbox"
+                  name="yieldMember"
+                  id="yieldMember3"
+                  value="Yield Farming (claiming rewards and converting to existing strategy)"
+                />
+                <span>Yield Farming (claiming rewards and converting to existing strategy)</span
+                ></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="yieldMember4"
+                ><input
+                  type="checkbox"
+                  name="yieldMember"
+                  id="yieldMember4"
+                  value="Leveraged Yield Farming (e.g. via Abracadarba, Alpaca or Alpha Homora)"
+                />
+                <span>Leveraged Yield Farming (e.g. via Abracadarba, Alpaca or Alpha Homora)</span
+                ></label
+              >
+              <label
+                class="radio-group radio-group--checkbox"
+                for="yieldMember5"
+                ><input
+                  type="checkbox"
+                  name="yieldMember"
+                  id="yieldMember5"
+                  value="Staking"
+                />
+                <span>Staking</span
+                ></label
+              >
+
+            </div>
+
+            <div class="form-section">
+              <p class="form--label">
+                What is your current degen ratio in terms of risk, where 0 =
+                total conservative and 10 = batshit crazy?
+              </p>
+              <div class="radio-horizontal">
+              <label class="radio-group" for="degenRatioMember1"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember1"
+                  value="1"
+                />
+                <span>1</span></label
+              >
+              <label class="radio-group" for="degenRatioMember2"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember2"
+                  value="2"
+                />
+                <span>2</span></label
+              >
+              <label class="radio-group" for="degenRatioMember3"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember3"
+                  value="3"
+                />
+                <span>3</span></label
+              >
+              <label class="radio-group" for="degenRatioMember4"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember4"
+                  value="4"
+                />
+                <span>4</span></label
+              >
+              <label class="radio-group" for="degenRatioMember5"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember5"
+                  value="5"
+                />
+                <span>5</span></label
+              >
+              <label class="radio-group" for="degenRatioMember6"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember6"
+                  value="6"
+                />
+                <span>6</span></label
+              >
+              <label class="radio-group" for="degenRatioMember7"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember7"
+                  value="7"
+                />
+                <span>7</span></label
+              >
+              <label class="radio-group" for="degenRatioMember8"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember8"
+                  value="8"
+                />
+                <span>8</span></label
+              >
+              <label class="radio-group" for="degenRatioMember9"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember9"
+                  value="9"
+                />
+                <span>9</span></label
+              >
+              <label class="radio-group" for="degenRatioMember10"
+                ><input
+                  type="radio"
+                  name="degenRatioMember"
+                  id="degenRatioMember10"
+                  value="10"
+                />
+                <span>10</span></label
+              >
+             </div>
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="degenScoreMember"
+                >Please enter your DegenScore from
+                <a href="https://degenscore.com/" target="_blank">degenscore.com</a
+              ></label>
+              <input
+                class="form-input"
+                type="text"
+                name="degenScoreMember"
+                id="degenScoreMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="earlyMember"
+                >Tell us about two projects where you have been really early.
+                How did you discover them?</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="earlyMember"
+                id="earlyMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="recentInvestmentsMember"
+                >What investments have made you the most in the recent months?
+                Why did you pick them?</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="recentInvestmentsMember"
+                id="recentInvestmentsMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="rugpullMember"
+                >Tell us about one scam/rugpull/exploit that you were a victim
+                of. How could you have avoided it in retrospect?</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="rugpullMember"
+                id="rugpullMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="publishedMember"
+                >Please provide a link to a recent Twitter thread,
+                article/report or YouTube video that you have published about a
+                specific DeFi protocol or token.</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="publishedMember"
+                id="publishedMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="valueMember"
+                >What added value can you bring to 0xVentures? How do you think
+                you can contribute?</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="valueMember"
+                id="valueMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <label class="form--label" for="elseMember"
+                >What else do you want to tell us?</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                name="elseMember"
+                id="elseMember"
+              />
+            </div>
+
+            <div class="form-section">
+              <button class="button form-button js-apply-member">Apply Now</button>
+            </div>
+            <div class="">
               <div class="form-alert js-alert"></div>
             </div>
           </form>
@@ -450,6 +1112,6 @@
     </section>
 
     <footer class=""></footer>
-    <script src="assets/js/main.js?v1.5.0"></script>
+    <script src="assets/js/main.js?v1.6.0"></script>
   </body>
 </html>
