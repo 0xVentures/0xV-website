@@ -56,14 +56,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-  [
-    "Qi Capital",
-    {
-      href: "https://qicapital.org/",
-      src: "assets/img/partners/partner_logo_qicapital.png",
-      imgClass: "",
-    },
-  ],
+  // [
+  //   "Qi Capital",
+  //   {
+  //     href: "https://qicapital.org/",
+  //     src: "assets/img/partners/partner_logo_qicapital.png",
+  //     imgClass: "",
+  //   },
+  // ],
 
   [
     "Algomint",
@@ -173,7 +173,7 @@ const partners = new Map([
   [
     "Phantasia",
     {
-      href: "https://www.phantasia.digital/",
+      href: "https://phantasia.app/",
       src: "assets/img/partners/partner_logo_phantasia.png",
       imgClass: "",
     },
@@ -224,6 +224,14 @@ const partners = new Map([
     {
       href: "https://metaprime.network/",
       src: "assets/img/partners/partner_logo_metaprime.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "dHEDGE",
+    {
+      href: "https://www.dhedge.org/",
+      src: "assets/img/partners/partner_logo_dhegde.png",
       imgClass: "",
     },
   ],
