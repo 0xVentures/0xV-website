@@ -13,7 +13,7 @@ const members = new Map([
   ["tharebear", "Tharebear"],
   ["8kalani8", "kalani"],
   ["howefai", "howefai"],
-  ["_realcosmos", "AIRTX"],
+  ["0xairtx", "AIRTX"],
   ["opaopaque", "Opaque"],
   ["pietrekt_", "pietrekt"],
   ["warlockofmirth", "MoDee227"],
