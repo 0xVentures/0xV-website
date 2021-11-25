@@ -235,6 +235,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
+  [
+    "allart",
+    {
+      href: "https://all.art/",
+      src: "assets/img/partners/partner_logo_allart.png",
+      imgClass: "",
+    },
+  ],
 ]);
 
 export default partners;
