@@ -1,17 +1,12 @@
-import members from "./members.js";
+import members from "./members-generated.js";
 
 // return @map
 export default async function getProfiles() {
 
   var membersImages = new Map();
 
-  members.forEach((name, twitter) => {
-    // const memberImg = getTwitterProfile(member);
-    // if (memberImg !== null) {
-      membersImages.set(
-        name.replace("@", "").trim(),
-        twitter.replace("@", "").trim(),
-      );
+  members.forEach((member) => {
+      membersImages.set(member[0], [member[1], [member[2]]]);
     // }
 
   });

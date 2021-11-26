@@ -1,7 +1,7 @@
 import anime from "animejs";
 import helpers from "./helpers.js";
 import { emailApplication } from "./email.js";
-import members from "./members.js";
+import getProfiles from "./twitter.js";
 import partners from "./partners.js";
 
 var animationsxV = (function () {
@@ -15,6 +15,7 @@ var animationsxV = (function () {
   var isLoading = true;
   var navIsOpen = false;
   var openSections = [];
+  var memberProfiles = getProfiles();
 
   // check if nav is displayed
   // if not, do not animate it
@@ -221,7 +222,9 @@ var animationsxV = (function () {
     membersInner.classList.add("members-inner");
 
     var memberNodes = [];
-    members.forEach((memberName, memberTwitter) => {
+
+    // memberData = [name, pfp]
+    memberProfiles.forEach((memberTwitter, memberData) => {
       var a = document.createElement("a");
       a.classList.add("member", "js-show-el");
       a.href = "https://twitter.com/" + memberTwitter;
@@ -232,13 +235,13 @@ var animationsxV = (function () {
 
       var img = document.createElement("img");
       img.classList.add("member__img");
-      img.src = "assets/img/avatars/" + memberTwitter + ".jpg";
+      img.src = memberData[1];
 
       var nameTwitter = document.createElement("div");
 
       var name = document.createElement("div");
       name.classList.add("member__name");
-      name.innerHTML = memberName;
+      name.innerHTML = memberData[0];
 
       var twitter = document.createElement("div");
       twitter.classList.add("member__twitter");

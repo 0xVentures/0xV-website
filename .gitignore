@@ -9,3 +9,9 @@ build
 node_modules
 
 accessgrant.txt
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
