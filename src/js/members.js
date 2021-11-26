@@ -1,3 +1,5 @@
+// LEGACY
+
 // Twitter => Display name
 const members = new Map([
   ["bullishtrader", "The Bull"],

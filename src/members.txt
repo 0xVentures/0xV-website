@@ -4,7 +4,7 @@ baloneybones, Baloney Bones
 rylucid, Rylucid
 _Jonsie_, Jonsie
 degentrified, degentrified
-slavetosound, slavetosound
+slavetosound85, slavetosound
 thor_rune_dad, john (thordad)
 thormaximalist, THORchain.BULL
 slatttophy, slattTophy
@@ -55,7 +55,7 @@ TamerOvutmen, Tamer
 wagmi42069, wagmi
 TheTickrate, Tickrate
 theautomatona, Wabbit
-BumQuack1337, Ochhii
+ochhii1337, Ochhii
 0x_luc, 0xLuc
 thorchain_newby, 123cheese
 MangoPeaches23, MangoPeaches

@@ -1,12 +1,12 @@
 import members from "./members-generated.js";
 
 // return @map
-export default async function getProfiles() {
+export default function getProfiles() {
 
-  var membersImages = new Map();
+  var membersImages = [];
 
   members.forEach((member) => {
-      membersImages.set(member[0], [member[1], [member[2]]]);
+      membersImages.push([member[0], member[1], member[2]]);
     // }
 
   });

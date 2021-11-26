@@ -16,6 +16,7 @@ var animationsxV = (function () {
   var navIsOpen = false;
   var openSections = [];
   var memberProfiles = getProfiles();
+  console.log(memberProfiles);
 
   // check if nav is displayed
   // if not, do not animate it
@@ -223,11 +224,11 @@ var animationsxV = (function () {
 
     var memberNodes = [];
 
-    // memberData = [name, pfp]
-    memberProfiles.forEach((memberTwitter, memberData) => {
+    // memberData = [twitter, name, pfp]
+    memberProfiles.forEach((memberData) => {
       var a = document.createElement("a");
       a.classList.add("member", "js-show-el");
-      a.href = "https://twitter.com/" + memberTwitter;
+      a.href = "https://twitter.com/" + memberData[0];
       a.target = "_blank";
 
       var wrapper = document.createElement("div");
@@ -235,17 +236,17 @@ var animationsxV = (function () {
 
       var img = document.createElement("img");
       img.classList.add("member__img");
-      img.src = memberData[1];
+      img.src = memberData[2];
 
       var nameTwitter = document.createElement("div");
 
       var name = document.createElement("div");
       name.classList.add("member__name");
-      name.innerHTML = memberData[0];
+      name.innerHTML = memberData[1];
 
       var twitter = document.createElement("div");
       twitter.classList.add("member__twitter");
-      twitter.innerHTML = "@" + memberTwitter;
+      twitter.innerHTML = "@" + memberData[0];
 
       // append
       nameTwitter.appendChild(name);
