@@ -30,7 +30,16 @@ When you finish updates, push code to `main` and run
 npm run deploy
 ```
 
+If you want to update profile pictures, check members.txt. Add any missing members [twitterHandle, displayName] and run:
+
+```bash
+dart get-twitter-pfp.dart
+npm run build
+npm run deploy
+```
+
 ## TODO
+
 - html compression/build on `run build`
 - integration with backend for fetching Twitter profile img
 - in the later stage, integration with webapp to fetch members list

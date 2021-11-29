@@ -17,7 +17,7 @@ const members = [
 ["8kalani8", " kalani", "https://pbs.twimg.com/profile_images/1453868137418354690/k9W9_m7A_normal.jpg"],
 ["howefai", " howefai", "https://pbs.twimg.com/profile_images/1452647170985840644/Elzv9mKC_normal.jpg"],
 ["0xairtx", " AIRTX", "https://pbs.twimg.com/profile_images/1463672048866058241/Q4UbNGMx_normal.jpg"],
-["opaopaque", " Opaque", "https://pbs.twimg.com/profile_images/1461370246346936320/jU19nZ-O_normal.jpg"],
+["opaopaque", " Opaque", "https://pbs.twimg.com/profile_images/1465002759627939843/FadUIJVl_normal.jpg"],
 ["pietrekt_", " pietrekt", "https://pbs.twimg.com/profile_images/1459255029257359366/0M6i8VGW_normal.png"],
 ["warlockofmirth", " Warlock", "https://pbs.twimg.com/profile_images/1459956990399164424/I8YsNpma_normal.jpg"],
 ["thorlunatic", " TL", "https://pbs.twimg.com/profile_images/1461384643752644614/IcCu3ImE_normal.jpg"],
@@ -44,7 +44,7 @@ const members = [
 ["dreisenhorn", " Eisenhorn", "https://pbs.twimg.com/profile_images/1459975495429279746/v9oiLbkC_normal.jpg"],
 ["jahverkhovykh", " Jah", "https://pbs.twimg.com/profile_images/1423375972901036042/wo5XYE2X_normal.jpg"],
 ["tbarret", " Erondil", "https://pbs.twimg.com/profile_images/530059374/1_normal.JPG"],
-["cashflowmagi", " cashflow.magi", "https://pbs.twimg.com/profile_images/1460542492311318531/q85V_4DR_normal.jpg"],
+["cashflowmagi", " cashflow.magi", "https://pbs.twimg.com/profile_images/1465222002571051010/zm5GT1Bo_normal.jpg"],
 ["tmc1908", " TMc1908", "https://pbs.twimg.com/profile_images/1426458598335463424/cJQ3jMwZ_normal.jpg"],
 ["0xbankai", " Bankai", "https://pbs.twimg.com/profile_images/1461514593902104581/Uxj3_oEl_normal.png"],
 ["rankinsj", " JRinc", "https://pbs.twimg.com/profile_images/1351294530809692162/ky0pKhJt_normal.jpg"],
@@ -70,6 +70,7 @@ const members = [
 ["chocolatemastr", " The Chocolate Master", "https://pbs.twimg.com/profile_images/1393747884428959747/1KoVkmnO_normal.png"],
 ["0x4mr1t", " uint8_t", "https://pbs.twimg.com/profile_images/1458422381676990465/u8o_QXWh_normal.jpg"],
 ["rezniktetsuo", " Trevrez", "https://pbs.twimg.com/profile_images/1427940615719841803/iY5p5LEE_normal.jpg"],
+["xplzstandbye", " PlzStandBye", "https://pbs.twimg.com/profile_images/1459289148859183104/TERtlLgv_normal.jpg"],
 ];
 
 export default members;
