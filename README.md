@@ -41,5 +41,5 @@ npm run deploy
 ## TODO
 
 - html compression/build on `run build`
-- integration with backend for fetching Twitter profile img
+- change dart members generation from js to json
 - in the later stage, integration with webapp to fetch members list

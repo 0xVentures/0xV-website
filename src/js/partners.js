@@ -243,6 +243,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
+  [
+    "Silo",
+    {
+      href: "https://www.silo.finance/",
+      src: "assets/img/partners/partner_logo_silo.png",
+      imgClass: "",
+    },
+  ],
 ]);
 
 export default partners;
