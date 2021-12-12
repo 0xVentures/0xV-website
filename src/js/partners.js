@@ -162,14 +162,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-  [
-    "BNPL",
-    {
-      href: "https://bnplpay.io/",
-      src: "assets/img/partners/partner_logo_bnpl.png",
-      imgClass: "partner-logos__item--heigh",
-    },
-  ],
+  // [
+  //   "BNPL",
+  //   {
+  //     href: "https://bnplpay.io/",
+  //     src: "assets/img/partners/partner_logo_bnpl.png",
+  //     imgClass: "partner-logos__item--heigh",
+  //   },
+  // ],
   [
     "Phantasia",
     {

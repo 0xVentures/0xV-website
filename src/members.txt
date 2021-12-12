@@ -1,6 +1,7 @@
 bullishtrader, The Bull
 unclebadgers, UncleBadgers
 baloneybones, Baloney Bones
+0xairtx, AIRTX
 rylucid, Rylucid
 _Jonsie_, Jonsie
 degentrified, degentrified
@@ -11,8 +12,7 @@ slatttophy, slattTophy
 tharebear, Tharebear
 8kalani8, kalani
 howefai, howefai
-0xairtx, AIRTX
-opaopaque, Opaque
+0xopaque, Opaque
 pietrekt_, pietrekt
 warlockofmirth, Warlock
 thorlunatic, shaye
