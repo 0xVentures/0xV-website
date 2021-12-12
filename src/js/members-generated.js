@@ -29,7 +29,7 @@ const members = [
 ["wraitheonn", " TacticalMinivan", "/assets/img/twitter_pfp/II9ZTPkJ_normal.png"],
 ["drismegistus", " mcbeaster", "/assets/img/twitter_pfp/_ljIphBI_normal.jpg"],
 ["hue53637781", " hue", "/assets/img/twitter_pfp/nn_KIxbJ_normal.jpg"],
-["0xnguyen", " 0xNguyen", "/assets/img/twitter_pfp/default_profile_normal.png"],
+["0xsaigon", " 0xSaigon", "/assets/img/twitter_pfp/H3DTg5b-_normal.jpg"],
 ["nighthoch", " memechoi", "/assets/img/twitter_pfp/Z14uTxta_normal.jpg"],
 ["tehslaw", " TehColeSlaw", "/assets/img/twitter_pfp/dKfEpVCq_normal.jpg"],
 ["archon_0x", " Archon", "/assets/img/twitter_pfp/UI2uyewq_normal.jpg"],
