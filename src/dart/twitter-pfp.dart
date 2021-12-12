@@ -58,6 +58,10 @@ Future<void> save_pfps() async {
   for (var memberKey in membersMap.keys) {
     final memberMap = membersMap[memberKey];
     final Uri url = Uri.parse(memberMap['profile_image_url']);
+    if (url == null) {
+      print('Error');
+      print(memberMap);
+    }
     final fileName = memberMap['profile_image_url'].split('/').last;
     await http.get(url).then((response) {
       File('./public/assets/img/twitter_pfp/$fileName').writeAsBytes(response.bodyBytes);
