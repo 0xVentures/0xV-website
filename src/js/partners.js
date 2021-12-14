@@ -251,6 +251,30 @@ const partners = new Map([
       imgClass: "",
     },
   ],
+  [
+    "Paragons",
+    {
+      href: "https://paragonsdao.com/",
+      src: "assets/img/partners/partner_logo_paragons.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "Bribe",
+    {
+      href: "https://www.bribe.xyz/",
+      src: "assets/img/partners/partner_logo_bribe.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "New Order",
+    {
+      href: "https://www.neworder.network/",
+      src: "assets/img/partners/partner_logo_neworder.png",
+      imgClass: "",
+    },
+  ],
 ]);
 
 export default partners;
