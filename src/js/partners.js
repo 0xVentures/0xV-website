@@ -81,14 +81,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-  [
-    "Slope",
-    {
-      href: "https://slope.finance/",
-      src: "assets/img/partners/partner_logo_slope.png",
-      imgClass: "",
-    },
-  ],
+  // [
+  //   "Slope",
+  //   {
+  //     href: "https://slope.finance/",
+  //     src: "assets/img/partners/partner_logo_slope.png",
+  //     imgClass: "",
+  //   },
+  // ],
   [
     "Cyclos",
     {
@@ -272,6 +272,14 @@ const partners = new Map([
     {
       href: "https://www.neworder.network/",
       src: "assets/img/partners/partner_logo_neworder.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "Index Zoo",
+    {
+      href: "https://www.indexzoo.com/",
+      src: "assets/img/partners/partner_logo_zoo.png",
       imgClass: "",
     },
   ],

@@ -57,16 +57,16 @@ Future<void> save_pfps() async {
 
   for (var memberKey in membersMap.keys) {
     final memberMap = membersMap[memberKey];
-    final Uri url = Uri.parse(memberMap['profile_image_url']);
-    if (url == null) {
+    if (memberMap['profile_image_url'] == null) {
       print('Error');
       print(memberMap);
     }
+    final Uri url = Uri.parse(memberMap['profile_image_url']);
     final fileName = memberMap['profile_image_url'].split('/').last;
     await http.get(url).then((response) {
       File('./public/assets/img/twitter_pfp/$fileName').writeAsBytes(response.bodyBytes);
       membersMap[memberKey]['profile_image_url_local'] = '/assets/img/twitter_pfp/$fileName';
-    });
+    }).then((value) => print('Done: $memberKey'));
   }
 
   // membersMap.map((member, memberMap) async {
