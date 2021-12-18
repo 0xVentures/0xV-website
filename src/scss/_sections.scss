@@ -147,11 +147,10 @@
 }
 
 .partner-logos__a {
-  flex: 1 1 100%;
-  @include tablet-up {
-    flex: 1 1 50%;
-    max-width: 50%;
-  }
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding-right: $space-05;
+
   @include laptop-up {
     flex: 1 1 33.33%;
     max-width: 33.33%;
@@ -159,7 +158,7 @@
 }
 
 .partner-logos__item {
-  height: $space-2;
+  max-height: $space-2;
   width: auto;
   margin-top: $space-2;
 }

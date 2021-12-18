@@ -41,14 +41,6 @@ const partners = new Map([
     },
   ],
   [
-    "Runebase",
-    {
-      href: "https://www.runebase.org/",
-      src: "assets/img/partners/partner_logo_runebase.png",
-      imgClass: "",
-    },
-  ],
-  [
     "Orion",
     {
       href: "https://orion.money/",
@@ -56,14 +48,6 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-  // [
-  //   "Qi Capital",
-  //   {
-  //     href: "https://qicapital.org/",
-  //     src: "assets/img/partners/partner_logo_qicapital.png",
-  //     imgClass: "",
-  //   },
-  // ],
 
   [
     "Algomint",
@@ -162,14 +146,6 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-  // [
-  //   "BNPL",
-  //   {
-  //     href: "https://bnplpay.io/",
-  //     src: "assets/img/partners/partner_logo_bnpl.png",
-  //     imgClass: "partner-logos__item--heigh",
-  //   },
-  // ],
   [
     "Phantasia",
     {
@@ -185,14 +161,6 @@ const partners = new Map([
       href: "https://infinityskies.io/",
       src: "assets/img/partners/partner_logo_infinityskies.png",
       imgClass: "partner-logos__item--heigh",
-    },
-  ],
-  [
-    "Shroomies",
-    {
-      href: "https://twitter.com/shroomiesNFT",
-      src: "assets/img/partners/partner_logo_shroomies.png",
-      imgClass: "",
     },
   ],
   [
