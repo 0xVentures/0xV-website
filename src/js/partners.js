@@ -251,6 +251,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
+  [
+    "Bridgesplit",
+    {
+      href: "https://www.bridgesplit.com/",
+      src: "assets/img/partners/partner_logo_bridgesplit.png",
+      imgClass: "",
+    },
+  ],
 ]);
 
 export default partners;
