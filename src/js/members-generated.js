@@ -70,6 +70,7 @@ const members = [
 ["chocolatemastr", " The Chocolate Master", "/assets/img/twitter_pfp/1KoVkmnO_normal.png"],
 ["rezniktetsuo", " Trevrez", "/assets/img/twitter_pfp/iY5p5LEE_normal.jpg"],
 ["0xplzstandbye", " PlzStandBye", "/assets/img/twitter_pfp/3j9Njv6o_normal.jpg"],
+["notablenofun", " NTNF", "/assets/img/twitter_pfp/XBnHMLuS_normal.jpg"],
 ["chadthoreau", " Chad THOReau", "/assets/img/twitter_pfp/YtxGwV0X_normal.jpg"],
 ];
 
