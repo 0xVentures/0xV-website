@@ -65,14 +65,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-  // [
-  //   "Slope",
-  //   {
-  //     href: "https://slope.finance/",
-  //     src: "assets/img/partners/partner_logo_slope.png",
-  //     imgClass: "",
-  //   },
-  // ],
+  [
+    "Folks Finance",
+    {
+      href: "https://folks.finance/",
+      src: "assets/img/partners/partner_logo_folksfinance.png",
+      imgClass: "",
+    },
+  ],
   [
     "Cyclos",
     {
@@ -155,14 +155,7 @@ const partners = new Map([
     },
   ],
 
-  [
-    "Infinity Skies",
-    {
-      href: "https://infinityskies.io/",
-      src: "assets/img/partners/partner_logo_infinityskies.png",
-      imgClass: "partner-logos__item--heigh",
-    },
-  ],
+
   [
     "ASM",
     {
@@ -219,14 +212,7 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-  [
-    "Paragons",
-    {
-      href: "https://paragonsdao.com/",
-      src: "assets/img/partners/partner_logo_paragons.png",
-      imgClass: "",
-    },
-  ],
+
   [
     "Bribe",
     {
@@ -257,6 +243,22 @@ const partners = new Map([
       href: "https://www.bridgesplit.com/",
       src: "assets/img/partners/partner_logo_bridgesplit.png",
       imgClass: "",
+    },
+  ],
+  [
+    "Paragons",
+    {
+      href: "https://paragonsdao.com/",
+      src: "assets/img/partners/partner_logo_paragons.png",
+      imgClass: "",
+    },
+  ],
+  [
+    "Infinity Skies",
+    {
+      href: "https://infinityskies.io/",
+      src: "assets/img/partners/partner_logo_infinityskies.png",
+      imgClass: "partner-logos__item--heigh",
     },
   ],
 ]);
