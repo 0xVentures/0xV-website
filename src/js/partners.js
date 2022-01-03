@@ -154,7 +154,14 @@ const partners = new Map([
       imgClass: "",
     },
   ],
-
+  [
+    "Mavia",
+    {
+      href: "https://www.mavia.com/",
+      src: "assets/img/partners/partner_logo_mavia.png",
+      imgClass: "",
+    },
+  ],
 
   [
     "ASM",
