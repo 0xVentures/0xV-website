@@ -6,6 +6,7 @@ const partners = new Map([
       href: "https://thorchain.org/",
       src: "assets/img/partners/partner_logo_thorchain.png",
       imgClass: "",
+      eco: ["thorchain"],
     },
   ],
   [
@@ -14,6 +15,7 @@ const partners = new Map([
       href: "https://thorswap.finance/",
       src: "assets/img/partners/partner_logo_thorswap.png",
       imgClass: "",
+      eco: ["thorchain"],
     },
   ],
   [
@@ -22,6 +24,7 @@ const partners = new Map([
       href: "https://thoryield.com/",
       src: "assets/img/partners/partner_logo_thoryield.png",
       imgClass: "",
+      eco: ["thorchain"],
     },
   ],
   [
@@ -30,6 +33,7 @@ const partners = new Map([
       href: "https://thorchads.com/",
       src: "assets/img/partners/partner_logo_thorchads.png",
       imgClass: "",
+      eco: ["thorchain"],
     },
   ],
   [
@@ -38,6 +42,7 @@ const partners = new Map([
       href: "https://liquidityprovider.university/",
       src: "assets/img/partners/partner_logo_lp_university.png",
       imgClass: "",
+      eco: ["thorchain"],
     },
   ],
   [
@@ -46,6 +51,7 @@ const partners = new Map([
       href: "https://orion.money/",
       src: "assets/img/partners/partner_logo_orion.png",
       imgClass: "",
+      eco: ["thorchain"],
     },
   ],
 
@@ -55,6 +61,7 @@ const partners = new Map([
       href: "https://www.algomint.io/",
       src: "assets/img/partners/partner_logo_algomint.png",
       imgClass: "",
+      eco: ["algorand"],
     },
   ],
   [
@@ -63,6 +70,7 @@ const partners = new Map([
       href: "https://www.algopulse.io/",
       src: "assets/img/partners/partner_logo_algopulse.png",
       imgClass: "",
+      eco: ["algorand"],
     },
   ],
   [
@@ -71,6 +79,7 @@ const partners = new Map([
       href: "https://folks.finance/",
       src: "assets/img/partners/partner_logo_folksfinance.png",
       imgClass: "",
+      eco: ["algorand"],
     },
   ],
   [
@@ -79,6 +88,7 @@ const partners = new Map([
       href: "https://cyclos.io/",
       src: "assets/img/partners/partner_logo_cyclos.png",
       imgClass: "",
+      eco: ["solana"],
     },
   ],
 
@@ -88,22 +98,7 @@ const partners = new Map([
       href: "https://synchrony.fi",
       src: "assets/img/partners/partner_logo_synchrony.png",
       imgClass: "",
-    },
-  ],
-  [
-    "White Whale",
-    {
-      href: "https://whitewhale.finance/",
-      src: "assets/img/partners/partner_logo_white_whale.png",
-      imgClass: "",
-    },
-  ],
-  [
-    "Levana",
-    {
-      href: "https://levana.finance",
-      src: "assets/img/partners/partner_logo_levana.png",
-      imgClass: "",
+      eco: ["solana"],
     },
   ],
   [
@@ -112,14 +107,7 @@ const partners = new Map([
       href: "https://symmetry.fi/",
       src: "assets/img/partners/partner_logo_symmetry.png",
       imgClass: "",
-    },
-  ],
-  [
-    "Valkyrie",
-    {
-      href: "https://valkyrieprotocol.com/",
-      src: "assets/img/partners/partner_logo_valkyrie.png",
-      imgClass: "",
+      eco: ["solana"],
     },
   ],
   [
@@ -128,6 +116,7 @@ const partners = new Map([
       href: "https://boringprotocol.io/",
       src: "assets/img/partners/partner_logo_boring.png",
       imgClass: "",
+      eco: ["solana"],
     },
   ],
   [
@@ -136,14 +125,7 @@ const partners = new Map([
       href: "https://ratio.finance/",
       src: "assets/img/partners/partner_logo_ratio.png",
       imgClass: "",
-    },
-  ],
-  [
-    "xdefi",
-    {
-      href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
-      src: "assets/img/partners/partner_logo_xdefi.png",
-      imgClass: "",
+      eco: ["solana"],
     },
   ],
   [
@@ -152,14 +134,109 @@ const partners = new Map([
       href: "https://phantasia.app/",
       src: "assets/img/partners/partner_logo_phantasia.png",
       imgClass: "",
+      eco: ["solana"],
     },
   ],
+  [
+    "allart",
+    {
+      href: "https://all.art/",
+      src: "assets/img/partners/partner_logo_allart.png",
+      imgClass: "",
+      eco: ["solana"],
+    },
+  ],
+  [
+    "Bridgesplit",
+    {
+      href: "https://www.bridgesplit.com/",
+      src: "assets/img/partners/partner_logo_bridgesplit.png",
+      imgClass: "",
+      eco: ["solana"],
+    },
+  ],
+  [
+    "White Whale",
+    {
+      href: "https://whitewhale.finance/",
+      src: "assets/img/partners/partner_logo_white_whale.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+  [
+    "Levana",
+    {
+      href: "https://levana.finance",
+      src: "assets/img/partners/partner_logo_levana.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+
+  [
+    "Valkyrie",
+    {
+      href: "https://valkyrieprotocol.com/",
+      src: "assets/img/partners/partner_logo_valkyrie.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+  [
+    "Lunaverse",
+    {
+      href: "https://lunaverse.io/",
+      src: "assets/img/partners/partner_logo_lunaverse.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+  [
+    "Subsquid",
+    {
+      href: "https://www.subsquid.io/",
+      src: "assets/img/partners/partner_logo_subsquid.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+
+  [
+    "Metaprime",
+    {
+      href: "https://metaprime.network/",
+      src: "assets/img/partners/partner_logo_metaprime.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+  [
+    "Bribe",
+    {
+      href: "https://www.bribe.xyz/",
+      src: "assets/img/partners/partner_logo_bribe.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+  [
+    "xdefi",
+    {
+      href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
+      src: "assets/img/partners/partner_logo_xdefi.png",
+      imgClass: "",
+      eco: ["thorchain", "ethereum", "terra"],
+    },
+  ],
+
   [
     "Mavia",
     {
       href: "https://www.mavia.com/",
       src: "assets/img/partners/partner_logo_mavia.png",
       imgClass: "",
+      eco: ["ethereum", "arbitrum"],
     },
   ],
 
@@ -169,71 +246,37 @@ const partners = new Map([
       href: "https://www.alteredstatemachine.xyz",
       src: "assets/img/partners/partner_logo_asm.png",
       imgClass: "",
+      eco: ["ethereum"],
     },
   ],
-  [
-    "Subsquid",
-    {
-      href: "https://www.subsquid.io/",
-      src: "assets/img/partners/partner_logo_subsquid.png",
-      imgClass: "",
-    },
-  ],
-  [
-    "Lunaverse",
-    {
-      href: "https://lunaverse.io/",
-      src: "assets/img/partners/partner_logo_lunaverse.png",
-      imgClass: "",
-    },
-  ],
-  [
-    "Metaprime",
-    {
-      href: "https://metaprime.network/",
-      src: "assets/img/partners/partner_logo_metaprime.png",
-      imgClass: "",
-    },
-  ],
+
   [
     "dHEDGE",
     {
       href: "https://www.dhedge.org/",
       src: "assets/img/partners/partner_logo_dhegde.png",
       imgClass: "",
+      eco: ["ethereum"],
     },
   ],
-  [
-    "allart",
-    {
-      href: "https://all.art/",
-      src: "assets/img/partners/partner_logo_allart.png",
-      imgClass: "",
-    },
-  ],
+
   [
     "Silo",
     {
       href: "https://www.silo.finance/",
       src: "assets/img/partners/partner_logo_silo.png",
       imgClass: "",
+      eco: ["ethereum"],
     },
   ],
 
-  [
-    "Bribe",
-    {
-      href: "https://www.bribe.xyz/",
-      src: "assets/img/partners/partner_logo_bribe.png",
-      imgClass: "",
-    },
-  ],
   [
     "New Order",
     {
       href: "https://www.neworder.network/",
       src: "assets/img/partners/partner_logo_neworder.png",
       imgClass: "",
+      eco: ["ethereum"],
     },
   ],
   [
@@ -242,22 +285,17 @@ const partners = new Map([
       href: "https://www.indexzoo.com/",
       src: "assets/img/partners/partner_logo_zoo.png",
       imgClass: "",
+      eco: ["ethereum"],
     },
   ],
-  [
-    "Bridgesplit",
-    {
-      href: "https://www.bridgesplit.com/",
-      src: "assets/img/partners/partner_logo_bridgesplit.png",
-      imgClass: "",
-    },
-  ],
+
   [
     "Paragons",
     {
       href: "https://paragonsdao.com/",
       src: "assets/img/partners/partner_logo_paragons.png",
       imgClass: "",
+      eco: ["ethereum"],
     },
   ],
   [
@@ -266,6 +304,7 @@ const partners = new Map([
       href: "https://infinityskies.io/",
       src: "assets/img/partners/partner_logo_infinityskies.png",
       imgClass: "partner-logos__item--heigh",
+      eco: ["ethereum"],
     },
   ],
 ]);
