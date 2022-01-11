@@ -2,6 +2,8 @@
 
 This is the main project repository for 0xVentures website.
 
+Do not update gh-pages directly. Use methods below.
+
 ## Install
 
 After cloning run
