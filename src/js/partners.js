@@ -1,6 +1,79 @@
 // partner logos
 const partners = new Map([
   [
+    "Composable",
+    {
+      href: "https://www.composable.finance/",
+      src: "assets/img/partners/partner_logo_composable.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+  [
+    "Subsquid",
+    {
+      href: "https://www.subsquid.io/",
+      src: "assets/img/partners/partner_logo_subsquid.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+
+  [
+    "Metaprime",
+    {
+      href: "https://metaprime.network/",
+      src: "assets/img/partners/partner_logo_metaprime.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+  [
+    "Bribe",
+    {
+      href: "https://www.bribe.xyz/",
+      src: "assets/img/partners/partner_logo_bribe.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+  [
+    "Algomint",
+    {
+      href: "https://www.algomint.io/",
+      src: "assets/img/partners/partner_logo_algomint.png",
+      imgClass: "",
+      eco: ["algorand"],
+    },
+  ],
+  [
+    "Algopulse",
+    {
+      href: "https://www.algopulse.io/",
+      src: "assets/img/partners/partner_logo_algopulse.png",
+      imgClass: "",
+      eco: ["algorand"],
+    },
+  ],
+  [
+    "Folks Finance",
+    {
+      href: "https://folks.finance/",
+      src: "assets/img/partners/partner_logo_folksfinance.png",
+      imgClass: "",
+      eco: ["algorand"],
+    },
+  ],
+  [
+    "xdefi",
+    {
+      href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
+      src: "assets/img/partners/partner_logo_xdefi.png",
+      imgClass: "",
+      eco: ["thorchain", "ethereum", "terra"],
+    },
+  ],
+  [
     "Thorchain",
     {
       href: "https://thorchain.org/",
@@ -45,43 +118,7 @@ const partners = new Map([
       eco: ["thorchain"],
     },
   ],
-  [
-    "Orion",
-    {
-      href: "https://orion.money/",
-      src: "assets/img/partners/partner_logo_orion.png",
-      imgClass: "",
-      eco: ["thorchain"],
-    },
-  ],
 
-  [
-    "Algomint",
-    {
-      href: "https://www.algomint.io/",
-      src: "assets/img/partners/partner_logo_algomint.png",
-      imgClass: "",
-      eco: ["algorand"],
-    },
-  ],
-  [
-    "Algopulse",
-    {
-      href: "https://www.algopulse.io/",
-      src: "assets/img/partners/partner_logo_algopulse.png",
-      imgClass: "",
-      eco: ["algorand"],
-    },
-  ],
-  [
-    "Folks Finance",
-    {
-      href: "https://folks.finance/",
-      src: "assets/img/partners/partner_logo_folksfinance.png",
-      imgClass: "",
-      eco: ["algorand"],
-    },
-  ],
   [
     "Cyclos",
     {
@@ -156,6 +193,15 @@ const partners = new Map([
     },
   ],
   [
+    "Orion",
+    {
+      href: "https://orion.money/",
+      src: "assets/img/partners/partner_logo_orion.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+  [
     "White Whale",
     {
       href: "https://whitewhale.finance/",
@@ -190,43 +236,6 @@ const partners = new Map([
       src: "assets/img/partners/partner_logo_lunaverse.png",
       imgClass: "",
       eco: ["terra"],
-    },
-  ],
-  [
-    "Subsquid",
-    {
-      href: "https://www.subsquid.io/",
-      src: "assets/img/partners/partner_logo_subsquid.png",
-      imgClass: "",
-      eco: ["dotsama"],
-    },
-  ],
-
-  [
-    "Metaprime",
-    {
-      href: "https://metaprime.network/",
-      src: "assets/img/partners/partner_logo_metaprime.png",
-      imgClass: "",
-      eco: ["dotsama"],
-    },
-  ],
-  [
-    "Bribe",
-    {
-      href: "https://www.bribe.xyz/",
-      src: "assets/img/partners/partner_logo_bribe.png",
-      imgClass: "",
-      eco: ["dotsama"],
-    },
-  ],
-  [
-    "xdefi",
-    {
-      href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
-      src: "assets/img/partners/partner_logo_xdefi.png",
-      imgClass: "",
-      eco: ["thorchain", "ethereum", "terra"],
     },
   ],
 
