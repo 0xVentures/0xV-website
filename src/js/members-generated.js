@@ -20,7 +20,7 @@ const members = [
 ["0xopaque", " Opaque", "/assets/img/twitter_pfp/LtMaRUUF_normal.jpg"],
 ["pietrekt_", " pietrekt", "/assets/img/twitter_pfp/0M6i8VGW_normal.png"],
 ["warlockofmirth", " Warlock", "/assets/img/twitter_pfp/FoWpEjWH_normal.png"],
-["thorlunatic", " TL", "/assets/img/twitter_pfp/IcCu3ImE_normal.jpg"],
+["thorlunatic", " TL", "/assets/img/twitter_pfp/UIsC5SMG_normal.jpg"],
 ["hoodlum1349", " Hoodlum", "/assets/img/twitter_pfp/vgTIm-yN_normal.jpg"],
 ["v__rabbit__v", " vRaBBiTv", "/assets/img/twitter_pfp/IOcYHd3e_normal.jpg"],
 ["bountyxxhunter", " Demandalorian", "/assets/img/twitter_pfp/5dkWWxw5_normal.jpg"],

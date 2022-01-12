@@ -248,6 +248,15 @@ const partners = new Map([
       eco: ["ethereum", "arbitrum"],
     },
   ],
+  [
+    "Perion",
+    {
+      href: "https://perion.gg/",
+      src: "assets/img/partners/partner_logo_perion.png",
+      imgClass: "",
+      eco: ["ethereum"],
+    },
+  ],
 
   [
     "ASM",
