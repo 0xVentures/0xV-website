@@ -240,6 +240,15 @@ const partners = new Map([
   ],
 
   [
+    "Platypus",
+    {
+      href: "https://platypus.finance/",
+      src: "assets/img/partners/partner_logo_platypus.png",
+      imgClass: "",
+      eco: ["avax"],
+    },
+  ],
+  [
     "Mavia",
     {
       href: "https://www.mavia.com/",
