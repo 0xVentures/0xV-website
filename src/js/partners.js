@@ -316,15 +316,15 @@ const partners = new Map([
     },
   ],
 
-  [
-    "Paragons",
-    {
-      href: "https://paragonsdao.com/",
-      src: "assets/img/partners/partner_logo_paragons.png",
-      imgClass: "",
-      eco: ["ethereum"],
-    },
-  ],
+  // [
+  //   "Paragons",
+  //   {
+  //     href: "https://paragonsdao.com/",
+  //     src: "assets/img/partners/partner_logo_paragons.png",
+  //     imgClass: "",
+  //     eco: ["ethereum"],
+  //   },
+  // ],
   [
     "Infinity Skies",
     {
