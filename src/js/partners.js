@@ -65,6 +65,15 @@ const partners = new Map([
     },
   ],
   [
+    "Exa",
+    {
+      href: "https://www.exa.finance/",
+      src: "assets/img/partners/partner_logo_exa.png",
+      imgClass: "",
+      eco: ["algorand"],
+    },
+  ],
+  [
     "xdefi",
     {
       href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
@@ -316,15 +325,6 @@ const partners = new Map([
     },
   ],
 
-  // [
-  //   "Paragons",
-  //   {
-  //     href: "https://paragonsdao.com/",
-  //     src: "assets/img/partners/partner_logo_paragons.png",
-  //     imgClass: "",
-  //     eco: ["ethereum"],
-  //   },
-  // ],
   [
     "Infinity Skies",
     {
