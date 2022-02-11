@@ -38,6 +38,24 @@ const partners = new Map([
     },
   ],
   [
+    "Taiga",
+    {
+      href: "https://taigaprotocol.io/",
+      src: "assets/img/partners/partner_logo_taiga.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+  [
+    "Tapio",
+    {
+      href: "https://taigaprotocol.io/",
+      src: "assets/img/partners/partner_logo_tapio.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+  [
     "Algomint",
     {
       href: "https://www.algomint.io/",
@@ -197,6 +215,15 @@ const partners = new Map([
     {
       href: "https://www.bridgesplit.com/",
       src: "assets/img/partners/partner_logo_bridgesplit.png",
+      imgClass: "",
+      eco: ["solana"],
+    },
+  ],
+  [
+    "Blue Terra",
+    {
+      href: "https://blueterra.land/",
+      src: "assets/img/partners/partner_logo_blueterra.png",
       imgClass: "",
       eco: ["solana"],
     },
