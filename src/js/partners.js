@@ -56,6 +56,15 @@ const partners = new Map([
     },
   ],
   [
+    "Exiled Racers",
+    {
+      href: "https://www.exiledracers.com/",
+      src: "assets/img/partners/partner_logo_exr.png",
+      imgClass: "",
+      eco: ["dotsama"],
+    },
+  ],
+  [
     "Algomint",
     {
       href: "https://www.algomint.io/",
