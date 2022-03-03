@@ -3,6 +3,7 @@ import helpers from "./helpers.js";
 import { emailApplication } from "./email.js";
 import getProfiles from "./twitter.js";
 import partners from "./partners.js";
+import medium from "./medium.js";
 
 var animationsxV = (function () {
   const video = document.querySelector(".back-video");
@@ -237,6 +238,7 @@ var animationsxV = (function () {
       var img = document.createElement("img");
       img.classList.add("member__img");
       img.src = memberData[2];
+      img.setAttribute("loading", "lazy");
 
       var nameTwitter = document.createElement("div");
 
@@ -276,6 +278,7 @@ var animationsxV = (function () {
       img.src = data.src;
       img.alt = partner;
       img.classList.add("partner-logos__item");
+      img.setAttribute("loading", "lazy");
       if (data.imgClass && data.imgClass !== "") {
         img.classList.add(data.imgClass);
       }

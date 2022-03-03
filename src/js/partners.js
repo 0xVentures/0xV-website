@@ -183,15 +183,15 @@ const partners = new Map([
       eco: ["solana"],
     },
   ],
-  [
-    "Ratio",
-    {
-      href: "https://ratio.finance/",
-      src: "assets/img/partners/partner_logo_ratio.png",
-      imgClass: "",
-      eco: ["solana"],
-    },
-  ],
+  // [
+  //   "Ratio",
+  //   {
+  //     href: "https://ratio.finance/",
+  //     src: "assets/img/partners/partner_logo_ratio.png",
+  //     imgClass: "",
+  //     eco: ["solana"],
+  //   },
+  // ],
   [
     "Phantasia",
     {
@@ -266,14 +266,24 @@ const partners = new Map([
     },
   ],
   [
-    "Lunaverse",
+    "Y Foundry Dao",
     {
-      href: "https://lunaverse.io/",
-      src: "assets/img/partners/partner_logo_lunaverse.png",
+      href: "https://yfoundry.io/",
+      src: "assets/img/partners/partner_logo_yfd.png",
       imgClass: "",
       eco: ["terra"],
     },
   ],
+
+  // [
+  //   "Lunaverse",
+  //   {
+  //     href: "https://lunaverse.io/",
+  //     src: "assets/img/partners/partner_logo_lunaverse.png",
+  //     imgClass: "",
+  //     eco: ["terra"],
+  //   },
+  // ],
 
   [
     "Platypus",
@@ -333,15 +343,16 @@ const partners = new Map([
     },
   ],
 
-  [
-    "New Order",
-    {
-      href: "https://www.neworder.network/",
-      src: "assets/img/partners/partner_logo_neworder.png",
-      imgClass: "",
-      eco: ["ethereum"],
-    },
-  ],
+  // [
+  //   "New Order",
+  //   {
+  //     href: "https://www.neworder.network/",
+  //     src: "assets/img/partners/partner_logo_neworder.png",
+  //     imgClass: "",
+  //     eco: ["ethereum"],
+  //   },
+  // ],
+
   [
     "Index Zoo",
     {
@@ -352,15 +363,15 @@ const partners = new Map([
     },
   ],
 
-  [
-    "Infinity Skies",
-    {
-      href: "https://infinityskies.io/",
-      src: "assets/img/partners/partner_logo_infinityskies.png",
-      imgClass: "partner-logos__item--heigh",
-      eco: ["ethereum"],
-    },
-  ],
+  // [
+  //   "Infinity Skies",
+  //   {
+  //     href: "https://infinityskies.io/",
+  //     src: "assets/img/partners/partner_logo_infinityskies.png",
+  //     imgClass: "partner-logos__item--heigh",
+  //     eco: ["ethereum"],
+  //   },
+  // ],
 ]);
 
 export default partners;
