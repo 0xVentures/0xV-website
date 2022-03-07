@@ -101,6 +101,15 @@ const partners = new Map([
     },
   ],
   [
+    "Pact",
+    {
+      href: "https://www.pact.fi/",
+      src: "assets/img/partners/partner_logo_pact.png",
+      imgClass: "",
+      eco: ["algorand"],
+    },
+  ],
+  [
     "xdefi",
     {
       href: "https://chrome.google.com/webstore/detail/xdefi-wallet/hmeobnfnfcmdkdcmlblgagmfpfboieaf",
@@ -192,15 +201,7 @@ const partners = new Map([
       eco: ["solana"],
     },
   ],
-  // [
-  //   "Ratio",
-  //   {
-  //     href: "https://ratio.finance/",
-  //     src: "assets/img/partners/partner_logo_ratio.png",
-  //     imgClass: "",
-  //     eco: ["solana"],
-  //   },
-  // ],
+
   [
     "Phantasia",
     {
@@ -283,16 +284,15 @@ const partners = new Map([
       eco: ["terra"],
     },
   ],
-
-  // [
-  //   "Lunaverse",
-  //   {
-  //     href: "https://lunaverse.io/",
-  //     src: "assets/img/partners/partner_logo_lunaverse.png",
-  //     imgClass: "",
-  //     eco: ["terra"],
-  //   },
-  // ],
+  [
+    "tiiik",
+    {
+      href: "https://www.tiiik.money/",
+      src: "assets/img/partners/partner_logo_tiiik.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
 
   [
     "Platypus",
@@ -351,6 +351,35 @@ const partners = new Map([
       eco: ["ethereum"],
     },
   ],
+  [
+    "Optyfi",
+    {
+      href: "https://opty.fi/",
+      src: "assets/img/partners/partner_logo_optyfi.png",
+      imgClass: "",
+      eco: ["ethereum"],
+    },
+  ],
+
+  [
+    "Index Zoo",
+    {
+      href: "https://www.indexzoo.com/",
+      src: "assets/img/partners/partner_logo_zoo.png",
+      imgClass: "",
+      eco: ["ethereum"],
+    },
+  ],
+
+  // [
+  //   "Ratio",
+  //   {
+  //     href: "https://ratio.finance/",
+  //     src: "assets/img/partners/partner_logo_ratio.png",
+  //     imgClass: "",
+  //     eco: ["solana"],
+  //   },
+  // ],
 
   // [
   //   "New Order",
@@ -362,15 +391,15 @@ const partners = new Map([
   //   },
   // ],
 
-  [
-    "Index Zoo",
-    {
-      href: "https://www.indexzoo.com/",
-      src: "assets/img/partners/partner_logo_zoo.png",
-      imgClass: "",
-      eco: ["ethereum"],
-    },
-  ],
+  // [
+  //   "Lunaverse",
+  //   {
+  //     href: "https://lunaverse.io/",
+  //     src: "assets/img/partners/partner_logo_lunaverse.png",
+  //     imgClass: "",
+  //     eco: ["terra"],
+  //   },
+  // ],
 
   // [
   //   "Infinity Skies",
