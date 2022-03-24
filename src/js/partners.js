@@ -229,15 +229,15 @@ const partners = new Map([
       eco: ["solana"],
     },
   ],
-  [
-    "Blue Terra",
-    {
-      href: "https://blueterra.land/",
-      src: "assets/img/partners/partner_logo_blueterra.png",
-      imgClass: "",
-      eco: ["solana"],
-    },
-  ],
+  // [
+  //   "Blue Terra",
+  //   {
+  //     href: "https://blueterra.land/",
+  //     src: "assets/img/partners/partner_logo_blueterra.png",
+  //     imgClass: "",
+  //     eco: ["solana"],
+  //   },
+  // ],
   [
     "Orion",
     {
@@ -291,6 +291,15 @@ const partners = new Map([
       src: "assets/img/partners/partner_logo_tiiik.png",
       imgClass: "",
       eco: ["terra"],
+    },
+  ],
+  [
+    "Shade",
+    {
+      href: "https://shadeprotocol.io/",
+      src: "assets/img/partners/partner_logo_shade.png",
+      imgClass: "",
+      eco: ["secret"],
     },
   ],
 
@@ -368,6 +377,16 @@ const partners = new Map([
       src: "assets/img/partners/partner_logo_zoo.png",
       imgClass: "",
       eco: ["ethereum"],
+    },
+  ],
+
+  [
+    "Sinple Finance",
+    {
+      href: "https://singlefinance.io/",
+      src: "assets/img/partners/partner_logo_single_finance.png",
+      imgClass: "",
+      eco: ["ethereum", "avalanche"],
     },
   ],
 
