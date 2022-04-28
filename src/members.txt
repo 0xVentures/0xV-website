@@ -24,7 +24,6 @@ andytcrypto, ANDY
 0xMinivan, TacticalMinivan
 drismegistus, mcbeaster
 hue53637781, hue
-0xSaigon, 0xSaigon
 nighthoch, memechoi
 tehslaw, TehColeSlaw
 archon_0x, Archon
@@ -68,3 +67,4 @@ ReznikTetsuo, Trevrez
 0xPlzStandBye, PlzStandBye
 NoTableNoFun, NTNF
 ChadTHOReau, Chad THOReau
+Asian0xV, Asian0xV
