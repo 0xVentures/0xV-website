@@ -136,33 +136,33 @@ const partners = new Map([
       eco: ["thorchain"],
     },
   ],
-  [
-    "Thoryield",
-    {
-      href: "https://thoryield.com/",
-      src: "assets/img/partners/partner_logo_thoryield.png",
-      imgClass: "",
-      eco: ["thorchain"],
-    },
-  ],
-  [
-    "Thorchads",
-    {
-      href: "https://thorchads.com/",
-      src: "assets/img/partners/partner_logo_thorchads.png",
-      imgClass: "",
-      eco: ["thorchain"],
-    },
-  ],
-  [
-    "LP University",
-    {
-      href: "https://liquidityprovider.university/",
-      src: "assets/img/partners/partner_logo_lp_university.png",
-      imgClass: "",
-      eco: ["thorchain"],
-    },
-  ],
+  // [
+  //   "Thoryield",
+  //   {
+  //     href: "https://thoryield.com/",
+  //     src: "assets/img/partners/partner_logo_thoryield.png",
+  //     imgClass: "",
+  //     eco: ["thorchain"],
+  //   },
+  // ],
+  // [
+  //   "Thorchads",
+  //   {
+  //     href: "https://thorchads.com/",
+  //     src: "assets/img/partners/partner_logo_thorchads.png",
+  //     imgClass: "",
+  //     eco: ["thorchain"],
+  //   },
+  // ],
+  // [
+  //   "LP University",
+  //   {
+  //     href: "https://liquidityprovider.university/",
+  //     src: "assets/img/partners/partner_logo_lp_university.png",
+  //     imgClass: "",
+  //     eco: ["thorchain"],
+  //   },
+  // ],
 
   [
     "Cyclos",

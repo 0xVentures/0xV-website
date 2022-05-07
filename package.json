@@ -1,7 +1,7 @@
 {
   "name": "0xventures",
   "homepage": "https://0xventures.org",
-  "version": "1.8.9",
+  "version": "1.8.10",
   "description": "This is the main project repository for 0xVentures - 0xVentures.org is the frontend for all web related projects born out of the greatest minds of LP University to be built with [React]( https://reactjs.org/), paired with a Mobile Application.",
   "main": "index.html",
   "dependencies": {
