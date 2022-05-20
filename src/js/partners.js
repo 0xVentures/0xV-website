@@ -165,6 +165,15 @@ const partners = new Map([
   // ],
 
   [
+    "Incept",
+    {
+      href: "https://incept.so/",
+      src: "assets/img/partners/partner_logo_incept.png",
+      imgClass: "",
+      eco: ["solana"],
+    },
+  ],
+  [
     "Cyclos",
     {
       href: "https://cyclos.io/",
