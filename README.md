@@ -36,12 +36,10 @@ If you want to update profile pictures, check members.txt. Add any missing membe
 
 ```bash
 dart get-twitter-pfp.dart
-npm run build
 npm run deploy
 ```
 
 ## TODO
 
 - html compression/build on `run build`
-- change dart members generation from js to json
 - in the later stage, integration with webapp to fetch members list
