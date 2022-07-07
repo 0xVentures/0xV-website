@@ -28,15 +28,15 @@ const partners = new Map([
       eco: ["dotsama"],
     },
   ],
-  [
-    "Bribe",
-    {
-      href: "https://www.bribe.xyz/",
-      src: "assets/img/partners/partner_logo_bribe.png",
-      imgClass: "",
-      eco: ["dotsama"],
-    },
-  ],
+  // [
+  //   "Bribe",
+  //   {
+  //     href: "https://www.bribe.xyz/",
+  //     src: "assets/img/partners/partner_logo_bribe.png",
+  //     imgClass: "",
+  //     eco: ["dotsama"],
+  //   },
+  // ],
   [
     "Taiga",
     {
