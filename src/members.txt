@@ -5,7 +5,6 @@ baloneybones, Baloney Bones
 rylucid, Rylucid
 _Jonsie_, Jonsie
 degentrified, degentrified
-slavetosound85, slavetosound
 thor_rune_dad, john (thordad)
 thormaximalist, THORchain.BULL
 slatttophy, slattTophy
@@ -68,3 +67,4 @@ ReznikTetsuo, Trevrez
 NoTableNoFun, NTNF
 ChadTHOReau, Chad THOReau
 Asian0xV, Asian0xV
+mogarchy, mogarchy
