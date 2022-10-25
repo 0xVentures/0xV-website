@@ -35,7 +35,7 @@ thorlafr, Olaf
 PromisQ_, Jative
 Dreisenhorn, Eisenhorn
 jahverkhovykh, Jah
-tbarret, Erondil
+tbarrett, Erondil
 CashflowMagi, cashflow.magi
 Tmc1908, TMc1908
 0xbankai, Bankai

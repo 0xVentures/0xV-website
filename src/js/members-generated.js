@@ -40,7 +40,7 @@ const members = [
 ["promisq_", " Jative", "/assets/img/twitter_pfp/-sDK-_sR_normal.jpg"],
 ["dreisenhorn", " Eisenhorn", "/assets/img/twitter_pfp/v9oiLbkC_normal.jpg"],
 ["jahverkhovykh", " Jah", "/assets/img/twitter_pfp/wo5XYE2X_normal.jpg"],
-["tbarret", " Erondil", "/assets/img/twitter_pfp/1_normal.JPG"],
+["tbarrett", " Erondil", "/assets/img/twitter_pfp/0DrvQrFz_normal.jpg"],
 ["cashflowmagi", " cashflow.magi", "/assets/img/twitter_pfp/abDJtQce_normal.jpg"],
 ["tmc1908", " TMc1908", "/assets/img/twitter_pfp/cJQ3jMwZ_normal.jpg"],
 ["0xbankai", " Bankai", "/assets/img/twitter_pfp/JHfbksAK_normal.png"],
