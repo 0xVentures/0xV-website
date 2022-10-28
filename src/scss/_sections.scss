@@ -341,7 +341,7 @@
 
 .twitter-timeline {
   @include border-radius;
-  background-color: color.change($background-primary, $alpha: 0.87);
+  background-color: $background-primary;
   color: $white-primary;
 }
 

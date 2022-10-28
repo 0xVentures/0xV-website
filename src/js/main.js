@@ -121,7 +121,7 @@ var animationsxV = (function () {
     const header = section.querySelector("h2");
     const paragraphs = section.querySelectorAll("p");
     header.innerHTML = header.textContent.replace(
-      /,?[a-zA-Z0-9][a-zA-Z0-9]*,?/g,
+      /,?[a-zA-Z0-9\-\'][a-zA-Z0-9\-\']*,?/g,
       "<span class='word'>$&</span>"
     );
     const headerWords = header.querySelectorAll(".word");
