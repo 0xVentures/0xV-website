@@ -43,9 +43,6 @@
   @include laptop-up {
      font-size: $font-size-8;
    }
-  @include big-desktop-up {
-     font-size: $font-size-9;
-   }
 }
 @mixin title-large {
   font-size: $font-size-4;
