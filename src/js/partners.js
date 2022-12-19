@@ -303,7 +303,7 @@ const partners = new Map([
     "Endemic",
     {
       href: "https://endemic.app/",
-      src: "assets/img/partners/partner_logo_single_endemic.png",
+      src: "assets/img/partners/partner_logo_endemic.png",
       imgClass: "",
       eco: ["aurora", "near"],
     },
