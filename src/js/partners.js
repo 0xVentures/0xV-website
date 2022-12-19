@@ -28,15 +28,7 @@ const partners = new Map([
       eco: ["dotsama"],
     },
   ],
-  // [
-  //   "Bribe",
-  //   {
-  //     href: "https://www.bribe.xyz/",
-  //     src: "assets/img/partners/partner_logo_bribe.png",
-  //     imgClass: "",
-  //     eco: ["dotsama"],
-  //   },
-  // ],
+
   [
     "Taiga",
     {
@@ -73,15 +65,7 @@ const partners = new Map([
       eco: ["algorand"],
     },
   ],
-  [
-    "Algopulse",
-    {
-      href: "https://www.algopulse.io/",
-      src: "assets/img/partners/partner_logo_algopulse.png",
-      imgClass: "",
-      eco: ["algorand"],
-    },
-  ],
+
   [
     "Folks Finance",
     {
@@ -105,6 +89,15 @@ const partners = new Map([
     {
       href: "https://www.pact.fi/",
       src: "assets/img/partners/partner_logo_pact.png",
+      imgClass: "",
+      eco: ["algorand"],
+    },
+  ],
+  [
+    "xBacked",
+    {
+      href: "https://www.xbacked.io/",
+      src: "assets/img/partners/partner_logo_xbacked.png",
       imgClass: "",
       eco: ["algorand"],
     },
@@ -136,99 +129,7 @@ const partners = new Map([
       eco: ["thorchain"],
     },
   ],
-  // [
-  //   "Thoryield",
-  //   {
-  //     href: "https://thoryield.com/",
-  //     src: "assets/img/partners/partner_logo_thoryield.png",
-  //     imgClass: "",
-  //     eco: ["thorchain"],
-  //   },
-  // ],
-  // [
-  //   "Thorchads",
-  //   {
-  //     href: "https://thorchads.com/",
-  //     src: "assets/img/partners/partner_logo_thorchads.png",
-  //     imgClass: "",
-  //     eco: ["thorchain"],
-  //   },
-  // ],
-  // [
-  //   "LP University",
-  //   {
-  //     href: "https://liquidityprovider.university/",
-  //     src: "assets/img/partners/partner_logo_lp_university.png",
-  //     imgClass: "",
-  //     eco: ["thorchain"],
-  //   },
-  // ],
 
-  [
-    "Incept",
-    {
-      href: "https://incept.so/",
-      src: "assets/img/partners/partner_logo_incept.png",
-      imgClass: "",
-      eco: ["solana"],
-    },
-  ],
-  [
-    "Cyclos",
-    {
-      href: "https://cyclos.io/",
-      src: "assets/img/partners/partner_logo_cyclos.png",
-      imgClass: "",
-      eco: ["solana"],
-    },
-  ],
-
-  [
-    "Synchrony",
-    {
-      href: "https://synchrony.fi",
-      src: "assets/img/partners/partner_logo_synchrony.png",
-      imgClass: "",
-      eco: ["solana"],
-    },
-  ],
-  [
-    "Symmetry",
-    {
-      href: "https://symmetry.fi/",
-      src: "assets/img/partners/partner_logo_symmetry.png",
-      imgClass: "",
-      eco: ["solana"],
-    },
-  ],
-  [
-    "The Boring Protocol",
-    {
-      href: "https://boringprotocol.io/",
-      src: "assets/img/partners/partner_logo_boring.png",
-      imgClass: "",
-      eco: ["solana"],
-    },
-  ],
-
-  [
-    "Phantasia",
-    {
-      href: "https://phantasia.app/",
-      src: "assets/img/partners/partner_logo_phantasia.png",
-      imgClass: "",
-      eco: ["solana"],
-    },
-  ],
-  [
-    "allart",
-    {
-      href: "https://all.art/",
-      src: "assets/img/partners/partner_logo_allart.png",
-      imgClass: "",
-      eco: ["solana"],
-    },
-  ],
   [
     "Bridgesplit",
     {
@@ -238,70 +139,7 @@ const partners = new Map([
       eco: ["solana"],
     },
   ],
-  // [
-  //   "Blue Terra",
-  //   {
-  //     href: "https://blueterra.land/",
-  //     src: "assets/img/partners/partner_logo_blueterra.png",
-  //     imgClass: "",
-  //     eco: ["solana"],
-  //   },
-  // ],
-  [
-    "Orion",
-    {
-      href: "https://orion.money/",
-      src: "assets/img/partners/partner_logo_orion.png",
-      imgClass: "",
-      eco: ["terra"],
-    },
-  ],
-  [
-    "White Whale",
-    {
-      href: "https://whitewhale.finance/",
-      src: "assets/img/partners/partner_logo_white_whale.png",
-      imgClass: "",
-      eco: ["terra"],
-    },
-  ],
-  [
-    "Levana",
-    {
-      href: "https://levana.finance",
-      src: "assets/img/partners/partner_logo_levana.png",
-      imgClass: "",
-      eco: ["terra"],
-    },
-  ],
 
-  [
-    "Valkyrie",
-    {
-      href: "https://valkyrieprotocol.com/",
-      src: "assets/img/partners/partner_logo_valkyrie.png",
-      imgClass: "",
-      eco: ["terra"],
-    },
-  ],
-  [
-    "Y Foundry Dao",
-    {
-      href: "https://yfoundry.io/",
-      src: "assets/img/partners/partner_logo_yfd.png",
-      imgClass: "",
-      eco: ["terra"],
-    },
-  ],
-  [
-    "tiiik",
-    {
-      href: "https://www.tiiik.money/",
-      src: "assets/img/partners/partner_logo_tiiik.png",
-      imgClass: "",
-      eco: ["terra"],
-    },
-  ],
   [
     "Shade",
     {
@@ -309,6 +147,15 @@ const partners = new Map([
       src: "assets/img/partners/partner_logo_shade.png",
       imgClass: "",
       eco: ["secret"],
+    },
+  ],
+  [
+    "Saga",
+    {
+      href: "https://www.saga.xyz/",
+      src: "assets/img/partners/partner_logo_saga.png",
+      imgClass: "",
+      eco: ["ibc"],
     },
   ],
 
@@ -322,6 +169,15 @@ const partners = new Map([
     },
   ],
   [
+    "ZKX",
+    {
+      href: "https://zkx.fi/",
+      src: "assets/img/partners/partner_logo_zkx.png",
+      imgClass: "",
+      eco: ["starkware"],
+    },
+  ],
+  [
     "Mavia",
     {
       href: "https://www.mavia.com/",
@@ -331,10 +187,55 @@ const partners = new Map([
     },
   ],
   [
+    "I'm Starving",
+    {
+      href: "https://www.imstarving.lol/",
+      src: "assets/img/partners/partner_logo_imstarving.png",
+      imgClass: "",
+      eco: ["arbitrum"],
+    },
+  ],
+  [
     "Perion",
     {
       href: "https://perion.gg/",
       src: "assets/img/partners/partner_logo_perion.png",
+      imgClass: "",
+      eco: ["ethereum"],
+    },
+  ],
+  [
+    "Alluo",
+    {
+      href: "https://www.alluo.com/",
+      src: "assets/img/partners/partner_logo_alluo.png",
+      imgClass: "",
+      eco: ["ethereum"],
+    },
+  ],
+  [
+    "Tapioca DAO",
+    {
+      href: "https://tapioca.loan/",
+      src: "assets/img/partners/partner_logo_tapioca.png",
+      imgClass: "",
+      eco: ["ethereum"],
+    },
+  ],
+  [
+    "Sentiment",
+    {
+      href: "https://www.sentiment.xyz/",
+      src: "assets/img/partners/partner_logo_sentiment.png",
+      imgClass: "",
+      eco: ["ethereum"],
+    },
+  ],
+  [
+    "Astrolab",
+    {
+      href: "https://astrolab.fi/",
+      src: "assets/img/partners/partner_logo_astrolab.png",
       imgClass: "",
       eco: ["ethereum"],
     },
@@ -398,6 +299,110 @@ const partners = new Map([
       eco: ["ethereum", "avalanche"],
     },
   ],
+  [
+    "Endemic",
+    {
+      href: "https://endemic.app/",
+      src: "assets/img/partners/partner_logo_single_endemic.png",
+      imgClass: "",
+      eco: ["aurora", "near"],
+    },
+  ],
+
+  [
+    "Orion",
+    {
+      href: "https://orion.money/",
+      src: "assets/img/partners/partner_logo_orion.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+  [
+    "White Whale",
+    {
+      href: "https://whitewhale.finance/",
+      src: "assets/img/partners/partner_logo_white_whale.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+  [
+    "Levana",
+    {
+      href: "https://levana.finance",
+      src: "assets/img/partners/partner_logo_levana.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+
+  [
+    "Valkyrie",
+    {
+      href: "https://valkyrieprotocol.com/",
+      src: "assets/img/partners/partner_logo_valkyrie.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+  [
+    "Y Foundry Dao",
+    {
+      href: "https://yfoundry.io/",
+      src: "assets/img/partners/partner_logo_yfd.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+  [
+    "tiiik",
+    {
+      href: "https://www.tiiik.money/",
+      src: "assets/img/partners/partner_logo_tiiik.png",
+      imgClass: "",
+      eco: ["terra"],
+    },
+  ],
+
+  [
+    "Incept",
+    {
+      href: "https://incept.so/",
+      src: "assets/img/partners/partner_logo_incept.png",
+      imgClass: "",
+      eco: ["solana"],
+    },
+  ],
+
+  [
+    "The Boring Protocol",
+    {
+      href: "https://boringprotocol.io/",
+      src: "assets/img/partners/partner_logo_boring.png",
+      imgClass: "",
+      eco: ["solana"],
+    },
+  ],
+
+  [
+    "Phantasia",
+    {
+      href: "https://phantasia.app/",
+      src: "assets/img/partners/partner_logo_phantasia.png",
+      imgClass: "",
+      eco: ["solana"],
+    },
+  ],
+  [
+    "allart",
+    {
+      href: "https://all.art/",
+      src: "assets/img/partners/partner_logo_allart.png",
+      imgClass: "",
+      eco: ["solana"],
+    },
+  ],
 
   // [
   //   "Ratio",
@@ -436,6 +441,93 @@ const partners = new Map([
   //     src: "assets/img/partners/partner_logo_infinityskies.png",
   //     imgClass: "partner-logos__item--heigh",
   //     eco: ["ethereum"],
+  //   },
+  // ],
+
+  // [
+  //   "Cyclos",
+  //   {
+  //     href: "https://cyclos.io/",
+  //     src: "assets/img/partners/partner_logo_cyclos.png",
+  //     imgClass: "",
+  //     eco: ["solana"],
+  //   },
+  // ],
+
+  // [
+  //   "Synchrony",
+  //   {
+  //     href: "https://synchrony.fi",
+  //     src: "assets/img/partners/partner_logo_synchrony.png",
+  //     imgClass: "",
+  //     eco: ["solana"],
+  //   },
+  // ],
+  // [
+  //   "Symmetry",
+  //   {
+  //     href: "https://symmetry.fi/",
+  //     src: "assets/img/partners/partner_logo_symmetry.png",
+  //     imgClass: "",
+  //     eco: ["solana"],
+  //   },
+  // ],
+
+  // [
+  //   "Blue Terra",
+  //   {
+  //     href: "https://blueterra.land/",
+  //     src: "assets/img/partners/partner_logo_blueterra.png",
+  //     imgClass: "",
+  //     eco: ["solana"],
+  //   },
+  // ],
+
+  // [
+  //   "Algopulse",
+  //   {
+  //     href: "https://www.algopulse.io/",
+  //     src: "assets/img/partners/partner_logo_algopulse.png",
+  //     imgClass: "",
+  //     eco: ["algorand"],
+  //   },
+  // ],
+
+  // [
+  //   "Thoryield",
+  //   {
+  //     href: "https://thoryield.com/",
+  //     src: "assets/img/partners/partner_logo_thoryield.png",
+  //     imgClass: "",
+  //     eco: ["thorchain"],
+  //   },
+  // ],
+  // [
+  //   "Thorchads",
+  //   {
+  //     href: "https://thorchads.com/",
+  //     src: "assets/img/partners/partner_logo_thorchads.png",
+  //     imgClass: "",
+  //     eco: ["thorchain"],
+  //   },
+  // ],
+  // [
+  //   "LP University",
+  //   {
+  //     href: "https://liquidityprovider.university/",
+  //     src: "assets/img/partners/partner_logo_lp_university.png",
+  //     imgClass: "",
+  //     eco: ["thorchain"],
+  //   },
+  // ],
+
+  // [
+  //   "Bribe",
+  //   {
+  //     href: "https://www.bribe.xyz/",
+  //     src: "assets/img/partners/partner_logo_bribe.png",
+  //     imgClass: "",
+  //     eco: ["dotsama"],
   //   },
   // ],
 ]);
