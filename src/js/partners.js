@@ -1,6 +1,15 @@
 // partner logos
 const partners = new Map([
   [
+    "Sui",
+    {
+      href: "https://sui.io/",
+      src: "assets/img/partners/partner_logo_sui.png",
+      imgClass: "",
+      eco: ["sui"],
+    },
+  ],
+  [
     "Composable",
     {
       href: "https://www.composable.finance/",
