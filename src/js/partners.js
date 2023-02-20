@@ -10,6 +10,15 @@ const partners = new Map([
     },
   ],
   [
+    "AfterMath",
+    {
+      href: "https://aftermath.finance/",
+      src: "assets/img/partners/partner_logo_af.png",
+      imgClass: "",
+      eco: ["sui"],
+    },
+  ],
+  [
     "Composable",
     {
       href: "https://www.composable.finance/",
@@ -47,15 +56,15 @@ const partners = new Map([
       eco: ["dotsama"],
     },
   ],
-  [
-    "Tapio",
-    {
-      href: "https://taigaprotocol.io/",
-      src: "assets/img/partners/partner_logo_tapio.png",
-      imgClass: "",
-      eco: ["dotsama"],
-    },
-  ],
+  // [
+  //   "Tapio",
+  //   {
+  //     href: "https://taigaprotocol.io/",
+  //     src: "assets/img/partners/partner_logo_tapio.png",
+  //     imgClass: "",
+  //     eco: ["dotsama"],
+  //   },
+  // ],
   [
     "Exiled Racers",
     {
@@ -299,15 +308,15 @@ const partners = new Map([
     },
   ],
 
-  [
-    "Sinple Finance",
-    {
-      href: "https://singlefinance.io/",
-      src: "assets/img/partners/partner_logo_single_finance.png",
-      imgClass: "",
-      eco: ["ethereum", "avalanche"],
-    },
-  ],
+  // [
+  //   "Single Finance",
+  //   {
+  //     href: "https://singlefinance.io/",
+  //     src: "assets/img/partners/partner_logo_single_finance.png",
+  //     imgClass: "",
+  //     eco: ["ethereum", "avalanche"],
+  //   },
+  // ],
   [
     "Endemic",
     {
@@ -336,15 +345,15 @@ const partners = new Map([
       eco: ["terra"],
     },
   ],
-  [
-    "Levana",
-    {
-      href: "https://levana.finance",
-      src: "assets/img/partners/partner_logo_levana.png",
-      imgClass: "",
-      eco: ["terra"],
-    },
-  ],
+  // [
+  //   "Levana",
+  //   {
+  //     href: "https://levana.finance",
+  //     src: "assets/img/partners/partner_logo_levana.png",
+  //     imgClass: "",
+  //     eco: ["terra"],
+  //   },
+  // ],
 
   [
     "Valkyrie",

@@ -1,5 +1,5 @@
 bullishtrader, The Bull
-unclebadgers, UncleBadgers
+0xbadgers, 0xbadgers
 baloneybones, Baloney Bones
 0xairtx, AIRTX
 rylucid, Rylucid
@@ -48,7 +48,7 @@ eatmybifrost, bifrosticle
 grabnarsergej, sergo
 jatinkkalra, Jatin Kalra
 keith_0x, Runeingman
-TamerAVentures, Tamer
+TamerOvutmen, Tamer
 wagmi42069, wagmi
 TheTickrate, Tickrate
 theautomatona, Wabbit
@@ -66,3 +66,4 @@ NoTableNoFun, NTNF
 ChadTHOReau, Chad THOReau
 Asian0xV, Asian0xV
 mogarchy, mogarchy
+redphonecrypto, redphone
