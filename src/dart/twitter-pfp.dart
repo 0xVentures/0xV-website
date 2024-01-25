@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 final File members = new File('./src/members.txt');
 final File membersJs = new File('./src/js/members.js');
 const String token =
-    'Bearer AAAAAAAAAAAAAAAAAAAAAOtrTAEAAAAAlR8uf7KnMxkGImintJZLim9lWeM%3DRcWyBqEdzJIymhIiWZBpXmTyzV1YOqACCv2j5JQJ2yzbnT8qNV';
+    'Bearer AAAAAAAAAAAAAAAAAAAAAOtrTAEAAAAA0WNOUi1YlfbK6ikwosH%2BxfbExck%3DKLAhXUoMMc2tY3sBT0bcnaoq4CqsiQY6z7fhtz9k9xfFIISvwD';
 String membersString = '';
 Map membersMap = {};
 
@@ -43,9 +43,15 @@ Future<void> get_pfps_url() async {
   var decodedResponse = jsonDecode(utf8.decode(response.bodyBytes)) as Map;
 
   print('Response status: ${response.statusCode}');
-  // print('Response body: ${response.body}');
-  // print("decodedResponse['data']");
+  print('Response body: ${response.body}');
+  print("decodedResponse['data']");
   // print(decodedResponse['data']);
+
+  if (decodedResponse['data'] == null) {
+    print('Error');
+    print(decodedResponse);
+    return;
+  }
 
   decodedResponse['data'].forEach((pfp) {
     membersMap[pfp['username'].toLowerCase()]['profile_image_url'] =
